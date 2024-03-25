@@ -16,5 +16,5 @@
 - HTML
 - CSS
 - Javascript
-- [Librairie d'animation GSAP]([https://pages.github.com](https://gsap.com/).
+- [Librairie d'animation GSAP](https://gsap.com/).
 - [Plugiciel ScrollTrigger]([https://pages.github.com/](https://gsap.com/docs/v3/Plugins/ScrollTrigger/)https://gsap.com/docs/v3/Plugins/ScrollTrigger/).
