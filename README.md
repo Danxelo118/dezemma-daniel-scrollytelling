@@ -5,7 +5,7 @@
 ## Conception
 
 - Matis Labelle
-- Daniel Sébastien Dezemma
+- Daniel Dezemma
 
 ## Développement/programmation
 
