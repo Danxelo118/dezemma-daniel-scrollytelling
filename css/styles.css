@@ -12,7 +12,7 @@
   }
 
 body {
-    font-family: Arial, sans-serif;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -26,6 +26,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000;
+     font-size: 1rem;
+}
+.scroll-cta:hover {
+    background-color: #555;
 }
 
 #scroll-target {
@@ -36,6 +40,16 @@ body {
 header {
     margin-bottom: 20px;
   }
+
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
   
 
 main {
