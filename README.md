@@ -17,4 +17,4 @@
 - CSS
 - Javascript
 - [Librairie d'animation GSAP](https://gsap.com/).
-- [Plugiciel ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/)https://gsap.com/docs/v3/Plugins/ScrollTrigger/).
+- [Plugiciel ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/).
