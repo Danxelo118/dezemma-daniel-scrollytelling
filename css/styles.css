@@ -98,11 +98,32 @@ main {
     background-image: url("../assets/img/chap-1.avif");
   }
 
+  .chapitre-2 {
+    background-image: url("../assets/img/chap-2.avif");
+  }
+
+  .chapitre-3 {
+    background-image: url("../assets/img/chap-3.avif");
+  }
+
+  .chapitre-4 {
+    background-image: url("../assets/img/chap-1.avif");
+  }
+
+  .chapitre-5 {
+    background-image: url("../assets/img/chap-1.avif");
+  }
+
+  .chapitre-6 {
+    background-image: url("../assets/img/chap-1.avif");
+  }
 
 
 footer {
-    color: black;
+    color: var(--green);
+    background-color: var(--beige);
     font-size: small;
+    text-align: center;
     bottom: 0;
     width: 100%;
   }
