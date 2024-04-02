@@ -1,14 +1,17 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css');
 
 
-:root {
-    --rouge: #ff5d73;
-    --gris-fonce: #494949;
-    --gris-pale: #7c7a7a;
-    --gris-blanc: #edede9;
+
+  :root {
+    --beige: #FFE2FE;
+    --beige-2: #D3C1D2;
+    --gris: #939196;
+    --gris-2: #626868;
+    --green: #273C2C;
+    --noir: black;
+    --blanc: white;
     --roboto: "roboto";
     --bebas: "Bebas Neue";
-    --noir: black;
   }
 
 body {
@@ -20,7 +23,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: var(--green);
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -32,33 +35,72 @@ body {
     background-color: #555;
 }
 
+
+
 #scroll-target {
     height: 2000px;
-    background-color: #ccc;
 }
 
+
+.scroll-cta i {
+    margin-bottom: 5px;
+
+  }
+
+
 header {
-    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    background-image: url("../assets/img/plane-header.avif");
   }
 
   header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 5vw;
+    margin: 20px;
+    color: var(--green);
+    top: 0;
 }
 
 header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 11px;
+    color: var(--green);
+
 }
-  
+
 
 main {
-    background-color: white;
-    color: var(--gris-fonce);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
   }
 
 
-  footer {
+  section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .chapitre-1 {
+    background-image: url("../assets/img/chap-1.avif");
+  }
+
+
+
+footer {
     color: black;
     font-size: small;
     bottom: 0;
