@@ -15,4 +15,16 @@ gsap.to("#cta-icon", {
     ease: "power1.inOut"
   });
   
-  
+  window.addEventListener('scroll', function() {
+    console.log('Scroll détecté !');
+});
+
+let scrollTimer;
+
+window.addEventListener('scroll', function() {
+    document.body.classList.add('is-scrolling');
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function() {
+        document.body.classList.remove('is-scrolling');
+    }, 100);
+});

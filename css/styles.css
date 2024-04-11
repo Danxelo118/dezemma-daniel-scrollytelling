@@ -52,7 +52,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    background-image: url("../assets/img/ocean.png");
+    background-image: url("../assets/img/sky.png");
   }
 
 
@@ -169,6 +169,12 @@ footer {
 }
 
 
+body.is-scrolling #sprite-sheet {
+    animation-play-state: running;
+    background-size: auto 100%;
+    width: 100vw; 
+    height: calc(100vw / 2433 * 422); 
+}
 
 /*
 .scroll-cta {
