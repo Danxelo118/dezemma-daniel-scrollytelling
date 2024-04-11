@@ -1,6 +1,10 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css');
 
-
+@font-face {
+    font-family: 'Komika';
+    src: url("../assets/font/KOMIKAX_.ttf") format('truetype');
+  }
+  
 
   :root {
     --beige: #FFE2FE;
@@ -18,7 +22,155 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    height: 200vh;
 }
+
+#cta-icon {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    color: var(--blanc);
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 50px;
+    text-shadow: 0 0 40px rgba(255, 255, 255, 1.5);
+  }
+  
+
+#scroll-target {
+    height: 2000px;
+}
+
+
+header {
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    background-image: url("../assets/img/ocean.png");
+  }
+
+
+
+  header h1 {
+    font-size: 5vw;
+    font-family: 'Komika', sans-serif;
+    margin: 20px;
+    color: var(--blanc);
+    top: 0;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 40px rgba(255, 255, 255, 1.5);
+    }
+  }
+
+
+
+header p {
+    font-size: 11px;
+    color: var(--beige-2);
+    background-image: url("../assets/img/airplane.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding: 20px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
+  }
+
+
+  section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red; 
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+    background-attachment: fixed; 
+  }
+
+  .chapitre-1 {
+    background-image: url("../assets/img//mountains.png");
+  }
+
+  .chapitre-2 {
+    background-image: url("../assets/img/ocean.png");
+  }
+
+  .chapitre-3 {
+    background-image: url("../assets/img/space.png");
+  }
+
+  .chapitre-4 {
+    background-image: url("../assets/img/chap-1.avif");
+  }
+
+  .chapitre-5 {
+    background-image: url("../assets/img/chap-2.avif");
+  }
+
+  .chapitre-6 {
+    background-image: url("../assets/img/mail-box.jpg");
+  }
+
+
+footer {
+    color: var(--green);
+    background-color: var(--beige);
+    font-size: small;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  #sprite-sheet {
+    width: 100px; 
+    height: 100px; 
+    background-image: url("../assets/img/spritesheet_bird.png"); 
+    background-size: cover; 
+    animation: Sprite 1s steps(4) infinite;
+}
+
+@keyframes Sprite {
+    0% { background-position: 0 0; }
+    100% { background-position: -409px 0; } 
+}
+
+
+#sprite-sheet.paused {
+    animation-play-state: paused; 
+}
+
+
+
+/*
 .scroll-cta {
     position: fixed;
     bottom: 20px;
@@ -34,96 +186,4 @@ body {
 .scroll-cta:hover {
     background-color: #555;
 }
-
-
-
-#scroll-target {
-    height: 2000px;
-}
-
-
-.scroll-cta i {
-    margin-bottom: 5px;
-
-  }
-
-
-header {
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-    background-image: url("../assets/img/plane-header.avif");
-  }
-
-  header h1 {
-    font-size: 5vw;
-    margin: 20px;
-    color: var(--green);
-    top: 0;
-}
-
-header p {
-    font-size: 11px;
-    color: var(--green);
-
-}
-
-
-main {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-  }
-
-
-  section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red; 
-    background-size: cover;
-    background-position: center;
-  }
-
-  .chapitre-1 {
-    background-image: url("../assets/img/chap-1.avif");
-  }
-
-  .chapitre-2 {
-    background-image: url("../assets/img/chap-2.avif");
-  }
-
-  .chapitre-3 {
-    background-image: url("../assets/img/chap-3.avif");
-  }
-
-  .chapitre-4 {
-    background-image: url("../assets/img/chap-1.avif");
-  }
-
-  .chapitre-5 {
-    background-image: url("../assets/img/chap-1.avif");
-  }
-
-  .chapitre-6 {
-    background-image: url("../assets/img/chap-1.avif");
-  }
-
-
-footer {
-    color: var(--green);
-    background-color: var(--beige);
-    font-size: small;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-  }
+*/

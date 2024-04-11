@@ -5,4 +5,14 @@ document.querySelector('.scroll-cta').addEventListener('click', function(e) {
 
 
 const ctaIcon = document.querySelector('.scroll-cta i');
-gsap.to(ctaIcon, { duration: 0.5, y: 5, repeat: -1, yoyo: true });
+
+
+gsap.to("#cta-icon", {
+    y: 20, 
+    duration: 1,
+    repeat: -1,
+    yoyo: true, 
+    ease: "power1.inOut"
+  });
+  
+  
