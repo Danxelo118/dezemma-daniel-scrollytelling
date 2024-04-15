@@ -22,7 +22,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    height: 200vh;
+    height: 5000px;
 }
 
 #cta-icon {
@@ -95,7 +95,7 @@ header p {
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     overflow: hidden;
@@ -128,11 +128,11 @@ main {
   }
 
   .chapitre-4 {
-    background-image: url("../assets/img/chap-1.avif");
+    background-image: url("../assets/img/planets.jpg");
   }
 
   .chapitre-5 {
-    background-image: url("../assets/img/chap-2.avif");
+    background-image: url("../assets/img/desert.png");
   }
 
   .chapitre-6 {
@@ -151,29 +151,40 @@ footer {
 
 
   #sprite-sheet {
-    width: 100px; 
-    height: 100px; 
+    width: 30vw; 
     background-image: url("../assets/img/spritesheet_bird.png"); 
-    background-size: cover; 
-    animation: Sprite 1s steps(4) infinite;
+    background-size: 300% 100%; 
+    animation: Sprite 1s steps(3) infinite;
+    aspect-ratio: 811/422;
+    animation-play-state: paused; 
+    
 }
+
 
 @keyframes Sprite {
     0% { background-position: 0 0; }
-    100% { background-position: -409px 0; } 
+    100% { background-position: -300% 0; } 
 }
 
 
-#sprite-sheet.paused {
+
+#sprite-sheet.whale {
+    width: 1000vw; 
+    background-image: url("../assets/img/spritesheet_whale.png"); 
+    background-size: cover; 
+    animation: whale 1s steps(42) infinite;
+    aspect-ratio: 822/822;
     animation-play-state: paused; 
+}
+
+@keyframes whale {
+    0% { background-position: 0 0; }
+    100% { background-position: -4200% 0; } 
 }
 
 
 body.is-scrolling #sprite-sheet {
     animation-play-state: running;
-    background-size: auto 100%;
-    width: 100vw; 
-    height: calc(100vw / 2433 * 422); 
 }
 
 /*

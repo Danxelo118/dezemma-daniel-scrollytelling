@@ -1,8 +1,3 @@
-document.querySelector('.scroll-cta').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector('#scroll-target').scrollIntoView({ behavior: 'smooth' });
-});
-
 
 const ctaIcon = document.querySelector('.scroll-cta i');
 
@@ -19,12 +14,27 @@ gsap.to("#cta-icon", {
     console.log('Scroll détecté !');
 });
 
+
+const body = document.querySelector('is-scrolling');
+
 let scrollTimer;
 
 window.addEventListener('scroll', function() {
     document.body.classList.add('is-scrolling');
-    clearTimeout(scrollTimer);
+
+});
+
+window.addEventListener('scrollend', function() {
     scrollTimer = setTimeout(function() {
         document.body.classList.remove('is-scrolling');
     }, 100);
-});
+   
+})
+
+gsap.to("#sprite-sheet", {
+    backgroundPosition: "0",
+    duration: 1.5, 
+    repeat: -1, 
+    ease: "steps(3)", 
+    x: "100vw", 
+  });
