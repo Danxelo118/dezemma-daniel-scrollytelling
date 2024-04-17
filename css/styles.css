@@ -168,22 +168,26 @@ footer {
 
 
 
-#sprite-sheet.whale {
-    width: 1000vw; 
+#whale {
+    width: 30vw; 
     background-image: url("../assets/img/spritesheet_whale.png"); 
     background-size: cover; 
     animation: whale 1s steps(42) infinite;
-    aspect-ratio: 822/822;
-    animation-play-state: paused; 
+    aspect-ratio: 1/1;
+   animation-play-state: paused;
 }
 
 @keyframes whale {
     0% { background-position: 0 0; }
-    100% { background-position: -4200% 0; } 
+    100% { background-position: -1260vw 0; } 
 }
 
 
+
 body.is-scrolling #sprite-sheet {
+    animation-play-state: running;
+}
+body.is-scrolling  #whale {
     animation-play-state: running;
 }
 
