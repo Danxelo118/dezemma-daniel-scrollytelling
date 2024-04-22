@@ -30,12 +30,12 @@ window.addEventListener('scrollend', function() {
     }, 100);
    
 })
-/*
+
 gsap.to("#sprite-sheet", {
-    backgroundPosition: "-300% 0",
-    duration: 1.5, 
+    backgroundPosition: "-100% 0",
+    duration: 5, 
     repeat: -1, 
-    ease: "steps(3)", 
+    ease: "steps(15)", 
     x: "100vw", 
   });
-  */
+  

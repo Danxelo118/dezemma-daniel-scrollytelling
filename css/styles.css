@@ -5,7 +5,9 @@
     src: url("../assets/font/KOMIKAX_.ttf") format('truetype');
   }
   
-
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/ 
   :root {
     --beige: #FFE2FE;
     --beige-2: #D3C1D2;
@@ -52,13 +54,13 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    background-image: url("../assets/img/sky.png");
+    background-image: url("../assets/img/night-sky.png");
   }
 
 
 
   header h1 {
-    font-size: 7.5vw;
+    font-size: 5.5vw;
     font-family: 'Komika', sans-serif;
     margin: 20px;
     color: var(--blanc);
@@ -85,7 +87,7 @@ header p {
   left: 0;
   width: 100%;
   font-size: 11px;
-  color: var(--beige-2);
+  color: var(--blanc);
   background-repeat: no-repeat;
   background-size: contain;
   padding: 20px;
@@ -124,39 +126,6 @@ main {
     background-attachment: fixed; 
   }
 
-  .chapitre-1 {
-    background-image: url("../assets/img//mountains.png");
-  }
-
-  .chapitre-2 {
-    background-image: url("../assets/img/desert.png");
-  }
-
-  .chapitre-3 {
-    background-image: url("../assets/img/ocean.png");
-  }
-
-  .chapitre-4 {
-    background-image: url("../assets/img/space.png");
-  }
-
-  .chapitre-5 {
-    background-image: url("../assets/img/planets.jpg");
-  }
-
-  .chapitre-6 {
-    background-image: url("../assets/img/mail-box.jpg");
-  }
-
-
-footer {
-    color: var(--green);
-    background-color: var(--beige);
-    font-size: small;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-  }
 
 
   #sprite-sheet {
@@ -199,6 +168,101 @@ body.is-scrolling #sprite-sheet {
 body.is-scrolling  #whale {
     animation-play-state: running;
 }
+
+
+footer {
+  color: var(--green);
+  background-color: var(--beige);
+  font-size: small;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+ul.technique-gsap{
+  background: rgba(0,0,0,0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+ul.technique-gsap li{
+  margin: 5px 0;
+}
+
+
+.chapitre-2 img {
+  width: 10%; 
+}
+
+.chapitre-1 img {
+  width: 10%;
+}
+
+.chapitre-4 img {
+  width: 10%;
+}
+
+.chapitre-3 img {
+  width: 10%;
+}
+
+  /*---------------------------------------------------------- 
+# Chapitre 1
+----------------------------------------------------------*/
+  .chapitre-1 {
+    background-image: url("../assets/img//mountains.png");
+  }
+
+  /*---------------------------------------------------------- 
+# Chapitre 2
+----------------------------------------------------------*/
+  .chapitre-2 {
+    background-image: url("../assets/img/desert.png");
+  }
+
+  /*---------------------------------------------------------- 
+# Chapitre 3
+----------------------------------------------------------*/
+  .chapitre-3 {
+    background-image: url("../assets/img/ocean.png");
+  }
+
+  /*---------------------------------------------------------- 
+# Chapitre 4
+----------------------------------------------------------*/
+  .chapitre-4 {
+    background-image: url("../assets/img/space-backg.png");
+  }
+
+  /*---------------------------------------------------------- 
+# Chapitre 5
+----------------------------------------------------------*/
+  .chapitre-5 {
+    background-image: url("../assets/img/space-back-2.png");
+  }
+
+  /*---------------------------------------------------------- 
+# Chapitre 6
+----------------------------------------------------------*/
+  .chapitre-6 {
+    background-image: url("../assets/img/mail-box.jpg");
+  }
+
+
+
 
 /*
 .scroll-cta {
