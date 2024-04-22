@@ -39,3 +39,14 @@ gsap.to("#sprite-sheet", {
     x: "100vw", 
   });
   
+
+gsap.to("#desert-ball", {
+    x: "100vw",
+    duration: 3,
+    ease: "linear", 
+    rotation: 360, 
+    repeat: -1 
+  });
+  
+  
+  

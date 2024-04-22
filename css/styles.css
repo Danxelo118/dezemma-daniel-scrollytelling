@@ -180,7 +180,7 @@ footer {
 }
 
 
-
+/*
 ul.technique-gsap{
   background: rgba(0,0,0,0.3);
   color: white;
@@ -201,11 +201,34 @@ ul.technique-gsap{
 ul.technique-gsap li{
   margin: 5px 0;
 }
+*/
 
-
-.chapitre-2 img {
+#desert-ball {
   width: 10%; 
+  position: relative;
+  left: -800px; 
+  top: 50%;
+  transform: translateY(-50%);
 }
+#planet-1 {
+  width: 30%;
+}
+
+#moon-1 {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#moon-2 {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 
 .chapitre-1 img {
   width: 10%;
@@ -244,22 +267,37 @@ ul.technique-gsap li{
 # Chapitre 4
 ----------------------------------------------------------*/
   .chapitre-4 {
-    background-image: url("../assets/img/space-backg.png");
+    background-image: url("../assets/img/sky-night.png");
+    position: relative;
   }
 
   /*---------------------------------------------------------- 
+
 # Chapitre 5
 ----------------------------------------------------------*/
-  .chapitre-5 {
+.chapitre-5 {
+  background-image: url("../assets/img/space-backg.png");
+}
+
+/*---------------------------------------------------------
+
+
+
+# Chapitre 6
+----------------------------------------------------------*/
+  .chapitre-6 {
     background-image: url("../assets/img/space-back-2.png");
   }
 
   /*---------------------------------------------------------- 
-# Chapitre 6
+# Chapitre 7
 ----------------------------------------------------------*/
-  .chapitre-6 {
+  .chapitre-7 {
     background-image: url("../assets/img/mail-box.jpg");
   }
+
+
+
 
 
 
