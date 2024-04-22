@@ -27,7 +27,7 @@ body {
 
 #cta-icon {
     position: absolute;
-    bottom: 20px; 
+    bottom: 60px; 
     left: 50%; 
     color: var(--blanc);
     transform: translateX(-50%);
@@ -58,7 +58,7 @@ header {
 
 
   header h1 {
-    font-size: 5vw;
+    font-size: 7.5vw;
     font-family: 'Komika', sans-serif;
     margin: 20px;
     color: var(--blanc);
@@ -79,18 +79,27 @@ header {
   }
 
 
-
 header p {
-    font-size: 11px;
-    color: var(--beige-2);
-    background-image: url("../assets/img/airplane.png");
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size:contain;
-    padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 11px;
+  color: var(--beige-2);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+.image-header {
+  background-image: url("../assets/img/airplane.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size:contain;
+  padding: 60px;
+}
 
 main {
     display: flex;
@@ -120,19 +129,19 @@ main {
   }
 
   .chapitre-2 {
-    background-image: url("../assets/img/ocean.png");
+    background-image: url("../assets/img/desert.png");
   }
 
   .chapitre-3 {
-    background-image: url("../assets/img/space.png");
+    background-image: url("../assets/img/ocean.png");
   }
 
   .chapitre-4 {
-    background-image: url("../assets/img/planets.jpg");
+    background-image: url("../assets/img/space.png");
   }
 
   .chapitre-5 {
-    background-image: url("../assets/img/desert.png");
+    background-image: url("../assets/img/planets.jpg");
   }
 
   .chapitre-6 {
