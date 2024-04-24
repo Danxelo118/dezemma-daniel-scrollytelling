@@ -40,6 +40,8 @@ gsap.to("#sprite-sheet", {
   });
   
 
+
+  
 gsap.to("#desert-ball", {
     x: "100vw",
     duration: 3,
@@ -47,6 +49,42 @@ gsap.to("#desert-ball", {
     rotation: 360, 
     repeat: -1 
   });
+
+  gsap.to("#planet-1", {
+    duration: 5,
+    ease: "linear", 
+    rotation: 90, 
+    repeat: -1 
+  });
+
+
   
+  let planets = gsap.timeline({ repeat: -1});
+
+
+  planets.to("#planet-2", {
+    duration: 5,
+    ease: "linear", 
+    rotation: 360,
+  });
   
-  
+  planets.to("#planet-3", {
+    duration: 5,
+    ease: "linear", 
+    rotation: 360, 
+}, "-=5");
+
+gsap.to("#spaceship", {
+    x: "-100vw",
+    duration: 2,
+    ease: "linear",  
+    repeat: -1 
+});
+
+gsap.to("#spaceship", {
+    scale: 0.5, 
+    duration: 1,
+    ease: "linear",
+    repeat: -1,
+    yoyo: true, 
+  });

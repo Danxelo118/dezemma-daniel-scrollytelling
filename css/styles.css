@@ -228,7 +228,13 @@ ul.technique-gsap li{
   left: 0;
 }
 
+#planet-2 {
+  width: 50%;
+}
 
+#planet-3 {
+  width: 30%;
+}
 
 .chapitre-1 img {
   width: 10%;
