@@ -31,7 +31,7 @@ window.addEventListener('scrollend', function() {
    
 })
 
-gsap.to("#sprite-sheet", {
+gsap.to("#sprite-sheet-bird", {
     backgroundPosition: "-100% 0",
     duration: 5, 
     repeat: -1, 
@@ -41,7 +41,7 @@ gsap.to("#sprite-sheet", {
   
 
 
-  
+
 gsap.to("#desert-ball", {
     x: "100vw",
     duration: 3,
@@ -50,7 +50,7 @@ gsap.to("#desert-ball", {
     repeat: -1 
   });
 
-  gsap.to("#planet-1", {
+  gsap.to("#planete-1", {
     duration: 5,
     ease: "linear", 
     rotation: 90, 
@@ -62,13 +62,13 @@ gsap.to("#desert-ball", {
   let planets = gsap.timeline({ repeat: -1});
 
 
-  planets.to("#planet-2", {
+  planets.to("#planete-2", {
     duration: 5,
     ease: "linear", 
     rotation: 360,
   });
   
-  planets.to("#planet-3", {
+  planets.to("#planete-3", {
     duration: 5,
     ease: "linear", 
     rotation: 360, 

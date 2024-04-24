@@ -4,6 +4,8 @@
     font-family: 'Komika';
     src: url("../assets/font/KOMIKAX_.ttf") format('truetype');
   }
+
+
   
 /*--------------------------------------------------------- 
 # Styles Généraux 
@@ -119,7 +121,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red; 
     background-size: cover;
     background-position: center;
     scroll-snap-align: start;
@@ -128,7 +129,7 @@ main {
 
 
 
-  #sprite-sheet {
+  #sprite-sheet-bird {
     width: 30vw; 
     background-image: url("../assets/img/spritesheet_bird.png"); 
     background-size: 300% 100%; 
@@ -146,7 +147,7 @@ main {
 
 
 
-#whale {
+#sprite-sheet-whale {
     width: 30vw; 
     background-image: url("../assets/img/spritesheet_whale.png"); 
     background-size: cover; 
@@ -162,10 +163,10 @@ main {
 
 
 
-body.is-scrolling #sprite-sheet {
+body.is-scrolling #sprite-sheet-bird {
     animation-play-state: running;
 }
-body.is-scrolling  #whale {
+body.is-scrolling  #sprite-sheet-whale {
     animation-play-state: running;
 }
 
@@ -204,55 +205,56 @@ ul.technique-gsap li{
 */
 
 #desert-ball {
-  width: 10%; 
+  width: 10vw; 
   position: relative;
-  left: -800px; 
-  top: 50%;
+  left: -30vw; 
+  top: 50vh;
   transform: translateY(-50%);
 }
-#planet-1 {
-  width: 30%;
+#planete-1 {
+  width: 30vw;
 }
 
-#moon-1 {
-  width: 30%;
+#lune-1 {
+  width: 30vw;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#moon-2 {
-  width: 30%;
+#lune-2 {
+  width: 30vw;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#planet-2 {
-  width: 50%;
+#planete-2 {
+  width: 50vw;
 }
 
-#planet-3 {
-  width: 30%;
+#planete-3 {
+  width: 30vw;
 }
 
-.chapitre-1 img {
-  width: 10%;
+
+.text-container {
+  top:10vh;
+  left:10vh;
+  position: absolute;
+  font-family: 'Komika';
+  color: var(--beige);
+  font-size: 2.5vw;
+  margin: 0.5vw;
 }
 
-.chapitre-4 img {
-  width: 10%;
-}
-
-.chapitre-3 img {
-  width: 10%;
-}
 
   /*---------------------------------------------------------- 
 # Chapitre 1
 ----------------------------------------------------------*/
   .chapitre-1 {
     background-image: url("../assets/img//mountains.png");
+    position: relative;
   }
 
   /*---------------------------------------------------------- 
@@ -260,6 +262,7 @@ ul.technique-gsap li{
 ----------------------------------------------------------*/
   .chapitre-2 {
     background-image: url("../assets/img/desert.png");
+    position: relative;
   }
 
   /*---------------------------------------------------------- 
@@ -267,6 +270,7 @@ ul.technique-gsap li{
 ----------------------------------------------------------*/
   .chapitre-3 {
     background-image: url("../assets/img/ocean.png");
+    position: relative;
   }
 
   /*---------------------------------------------------------- 
@@ -283,6 +287,7 @@ ul.technique-gsap li{
 ----------------------------------------------------------*/
 .chapitre-5 {
   background-image: url("../assets/img/space-backg.png");
+  position: relative;
 }
 
 /*---------------------------------------------------------
@@ -293,6 +298,7 @@ ul.technique-gsap li{
 ----------------------------------------------------------*/
   .chapitre-6 {
     background-image: url("../assets/img/space-back-2.png");
+    position: relative;
   }
 
   /*---------------------------------------------------------- 
@@ -300,6 +306,7 @@ ul.technique-gsap li{
 ----------------------------------------------------------*/
   .chapitre-7 {
     background-image: url("../assets/img/mail-box.jpg");
+    position: relative;
   }
 
 
