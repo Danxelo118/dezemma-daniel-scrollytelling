@@ -308,27 +308,3 @@ ul.technique-gsap li{
     background-image: url("../assets/img/mail-box.jpg");
     position: relative;
   }
-
-
-
-
-
-
-
-/*
-.scroll-cta {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--green);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 1000;
-     font-size: 1rem;
-}
-.scroll-cta:hover {
-    background-color: #555;
-}
-*/
