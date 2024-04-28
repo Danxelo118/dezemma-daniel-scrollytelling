@@ -108,10 +108,19 @@ gsap.to("#spaceship", {
     yoyo: true,
 });
 
-gsap.to("#bubble", {
-    opacity: 0,
-    repeat: -1,
+let text = gsap.timeline({ repeat: -1, });
+
+text.to("#paper", {
+    duration: 2,
+    x: "-30vw",
+    ease: "power3.inOut",
+}, "-=0.5");
+
+
+text.to("#bubble", {
+    opacity: 100,
     yoyo: true,
     duration: 1,
     ease: "power4.inOut",
-})
+});
+

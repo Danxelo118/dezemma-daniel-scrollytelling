@@ -140,9 +140,9 @@ footer {
 }
 
 
-/*
-ul.technique-gsap{
-  background: rgba(0,0,0,0.3);
+
+ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 10px;
   font-family: monospace;
@@ -158,10 +158,10 @@ ul.technique-gsap{
   left: 0;
 }
 
-ul.technique-gsap li{
+ul.technique-gsap li {
   margin: 5px 0;
 }
-*/
+
 
 
 .text-container {
@@ -274,6 +274,7 @@ body.is-scrolling #sprite-sheet-whale {
   animation-play-state: running;
 }
 
+
 /*---------------------------------------------------------- 
 
 
@@ -356,6 +357,14 @@ body.is-scrolling #sprite-sheet-whale {
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0;
+}
+
+#paper {
+  width: 20vw;
+  position: absolute;
+  top: 20vw;
+  right: -15vw;
 }
 
 /*---------------------------------------------------------- 
