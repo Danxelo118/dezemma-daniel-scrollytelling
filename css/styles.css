@@ -180,12 +180,34 @@ ul.technique-gsap li {
 
 
 
+# chapitre 0 
+
+----------------------------------------------------------*/
+
+
+.chapitre-0 {
+  position: relative;
+}
+
+.mask {
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/*---------------------------------------------------------- 
+
+
 
 
 # Chapitre 1
 ----------------------------------------------------------*/
 .chapitre-1 {
-  background-image: url("../assets/img//mountains.png");
+  background-image: url("../assets/img/mountains.png");
   position: relative;
 }
 
@@ -337,8 +359,16 @@ body.is-scrolling #sprite-sheet-whale {
 
 #planete-1 {
   width: 30vw;
+  z-index: 1;
 }
 
+#desert {
+  width: 6vw;
+  position: absolute;
+  left: 68vw;
+  bottom: 20vw;
+  z-index: -1;
+}
 /*---------------------------------------------------------- 
 
 
