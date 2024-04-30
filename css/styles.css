@@ -187,18 +187,15 @@ ul.technique-gsap li {
 
 .chapitre-0 {
   position: relative;
+  filter: none; 
+  
+  border: red 1px solid;
 }
 
-.mask {
-  height: 100%;
-  overflow: hidden;
-}
+.disappear {
 
-.wrapper {
-  position: relative;
-  width: 100%;
+  filter: grayscale(100%);
 }
-
 /*---------------------------------------------------------- 
 
 
@@ -209,6 +206,7 @@ ul.technique-gsap li {
 .chapitre-1 {
   background-image: url("../assets/img/mountains.png");
   position: relative;
+  border: red 1px solid;
 }
 
 #sprite-sheet-bird {
@@ -246,6 +244,7 @@ body.is-scrolling #sprite-sheet-bird {
 .chapitre-2 {
   background-image: url("../assets/img/desert.png");
   position: relative;
+  border: red 1px solid;
 }
 
 #desert-ball {
@@ -267,6 +266,7 @@ body.is-scrolling #sprite-sheet-bird {
 .chapitre-3 {
   background-image: url("../assets/img/ocean.png");
   position: relative;
+  border: red 1px solid;
 }
 
 #sprite-sheet-whale {
@@ -308,6 +308,7 @@ body.is-scrolling #sprite-sheet-whale {
 .chapitre-4 {
   background-image: url("../assets/img/sky-night.png");
   position: relative;
+  border: red 1px solid;
 }
 
 #lune-1 {
@@ -334,6 +335,7 @@ body.is-scrolling #sprite-sheet-whale {
 .chapitre-5 {
   background-image: url("../assets/img/space-backg.png");
   position: relative;
+  border: red 1px solid;
 }
 
 
@@ -355,6 +357,7 @@ body.is-scrolling #sprite-sheet-whale {
 .chapitre-6 {
   background-image: url("../assets/img/space-back-2.png");
   position: relative;
+  border: red 1px solid;
 }
 
 #planete-1 {
@@ -380,6 +383,7 @@ body.is-scrolling #sprite-sheet-whale {
 .chapitre-7 {
   background-image: url("../assets/img/mail-box.jpg");
   position: relative;
+  border: red 1px solid;
 }
 
 #bubble {
