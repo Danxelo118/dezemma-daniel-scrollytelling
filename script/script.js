@@ -38,6 +38,8 @@ gsap.to(".image-header", {
 });
 
 
+gsap.registerPlugin(ScrollTrigger);
+
 
 
 // animation chapitre 0 //
@@ -46,6 +48,7 @@ gsap.to(".chapitre-0", {
     scrollTrigger: {
       trigger: ".chapitre-0",
       scrub: 1,
+      pin: true,
       start: "top 10%",
       end: "bottom 10%",
       toggleClass: "disappear"
@@ -182,7 +185,7 @@ let planets = gsap.timeline({ scrollTrigger: {
     trigger: ".chapitre-5",
     start: "top 50%",
     end: "bottom 50%",
-    toggleActions: "play none none none",
+    toggleActions: "play reverse none reverse",
     markers: true
 }, });
 
@@ -294,7 +297,8 @@ gsap.to(".chapitre-6 #spaceship", {
 let text = gsap.timeline({scrollTrigger: {
     trigger: ".chapitre-7",
     toggleActions: "restart play reverse reset",
-  }, });
+  },
+ });
 
 text.to(".chapitre-7 #paper", {
     duration: 2,
@@ -319,6 +323,9 @@ gsap.to(".chapitre-0 #message-input", {
     let messageSubmit = document.getElementById("submit-message");
     let messageOutput = document.getElementById("bubble");
 
+    console.log("messageSubmit:", messageSubmit);
+console.log("messageOutput:", messageOutput);
+
     messageSubmit.addEventListener("click", function () {
       let message = document.getElementById("message-input").value;
       messageOutput.textContent = message;
@@ -331,8 +338,7 @@ gsap.to(".chapitre-0 #message-input", {
 
 
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
+/*gsap.registerPlugin(DrawSVGPlugin);*/
 
 
 
