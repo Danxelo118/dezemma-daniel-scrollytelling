@@ -450,13 +450,10 @@ body.is-scrolling #sprite-sheet-whale {
 }
 
 .message-input {
-  width: 50vw;
-  aspect-ratio: 1;
   position: absolute;
+  width: 50vw;
   top: 50vh;
   left: 20vw;
-  bottom: 0vh;
-  right: 0;
   margin: auto;
   z-index: 2;
 }
