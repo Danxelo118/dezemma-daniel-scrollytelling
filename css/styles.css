@@ -204,13 +204,61 @@ ul.technique-gsap li {
 # Chapitre 1
 ----------------------------------------------------------*/
 .chapitre-1 {
-  background-image: url("../assets/img/mountains.png");
   position: relative;
   border: red 1px solid;
 }
 
+
+
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.montagne-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/montagne-pink.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.montagne-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/montagne-mauve.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.montagne-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/montagne-verte.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
 #sprite-sheet-bird {
   width: 30vw;
+  z-index: 3;
   background-image: url("../assets/img/spritesheet_bird.png");
   background-size: 300% 100%;
   animation: Sprite 1s steps(3) infinite;
@@ -401,4 +449,15 @@ body.is-scrolling #sprite-sheet-whale {
   right: -15vw;
 }
 
+.message-input {
+  width: 50vw;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 50vh;
+  left: 20vw;
+  bottom: 0vh;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+}
 /*---------------------------------------------------------- 

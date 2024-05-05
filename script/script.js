@@ -1,4 +1,4 @@
-// animation page générale //
+/* Animation page générale */
 const ctaIcon = document.querySelector('.scroll-cta i');
 
 
@@ -39,10 +39,10 @@ gsap.to(".image-header", {
 
 
 gsap.registerPlugin(ScrollTrigger);
+/*gsap.registerPlugin(DrawSVGPlugin);*/
 
 
-
-// animation chapitre 0 //
+/* Animation chapitre 0 */
 
 gsap.to(".chapitre-0", {
     scrollTrigger: {
@@ -50,7 +50,7 @@ gsap.to(".chapitre-0", {
       scrub: 1,
       pin: true,
       start: "top 10%",
-      end: "bottom 10%",
+      end: "+=100%",
       toggleClass: "disappear"
     }
   });
@@ -61,20 +61,45 @@ gsap.to(".chapitre-0", {
 
 
 
-// animation chapitre 1 //
+/* Animation chapitre 1 */
 
 gsap.to(".chapitre-1 #sprite-sheet-bird", {
     x: "-30vw",
-    x: "+=100vw",
+    x: "+=130vw",
     duration: 50,
     repeat: -1,
     scrollTrigger: {
         trigger: ".chapitre-1",
         start: "top 50%",
-        end: "bottom 50%",
+        end: "+=100%",
         toggleActions: "play none none none",
         markers: true
     }
+});
+
+
+gsap.to(".montagne-3", {
+    backgroundPosition: "50% 150%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".chapitre-1",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        markers: true,
+    },
+});
+
+gsap.to(".montagne-2", {
+    backgroundPosition: "50% 120%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".chapitre-1",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        markers: true,
+    },
 });
 
 
@@ -84,7 +109,7 @@ gsap.to(".chapitre-1 #sprite-sheet-bird", {
 
 
 
-// animation chapitre 2 //
+/* Animation chapitre 2 */
 
 
 gsap.to(".chapitre-2 #desert-ball", {
@@ -96,11 +121,14 @@ gsap.to(".chapitre-2 #desert-ball", {
     scrollTrigger: {
         trigger: ".chapitre-2",
         start: "top 50%",
-        end: "bottom 50%",
+        end: "+=100%",
         toggleActions: "play none none none",
         markers: true
     }
 });
+
+
+
 
 
 // -- chapitre 2 //
@@ -108,7 +136,7 @@ gsap.to(".chapitre-2 #desert-ball", {
 
 
 
-// animation chapitre 3 //
+/* Animation chapitre 3 */
 
 
 gsap.to(".chapitre-3 #sprite-sheet-whale", {
@@ -119,7 +147,7 @@ gsap.to(".chapitre-3 #sprite-sheet-whale", {
     scrollTrigger: {
         trigger: ".chapitre-3",
         start: "top 50%",
-        end: "bottom 50%",
+        end: "+=100%",
         toggleActions: "play none none none",
         markers: true
     }
@@ -133,7 +161,7 @@ gsap.to(".chapitre-3 #sprite-sheet-whale", {
 
 
 
-// animation chapitre 4 //
+/* Animation chapitre 4 */
 
 
 gsap.to(".chapitre-4 #lune-1", {
@@ -148,7 +176,7 @@ gsap.to(".chapitre-4 #lune-1", {
     scrollTrigger: {
         trigger: ".chapitre-4",
         start: "top 50%",
-        end: "bottom 50%",
+        end: "+=100%",
         toggleActions: "play none none none",
         markers: true
     }
@@ -166,7 +194,7 @@ gsap.to(".chapitre-4 #lune-2", {
     scrollTrigger: {
         trigger: ".chapitre-4",
         start: "top 50%",
-        end: "bottom 50%",
+        end: "+=100%",
         toggleActions: "play none none none",
         markers: true
     }
@@ -179,12 +207,12 @@ gsap.to(".chapitre-4 #lune-2", {
 
 
 
-// animation chapitre 5 //
+/* Animation chapitre 5 */
 
 let planets = gsap.timeline({ scrollTrigger: {
     trigger: ".chapitre-5",
     start: "top 50%",
-    end: "bottom 50%",
+    end: "+=100%",
     toggleActions: "play reverse none reverse",
     markers: true
 }, });
@@ -231,7 +259,7 @@ planets.to(".chapitre-5 #planete-3", {
 
 
 
-// animation chapitre 6 //
+/* Animation chapitre 6 */
 
 
 gsap.fromTo("#desert", {
@@ -248,11 +276,12 @@ gsap.to(".chapitre-6 #planete-1", {
     duration: 2,
     ease: "linear",
     rotation: 360,
+    scale: 1.5,
     repeat: -1,
     scrollTrigger: {
         trigger: ".chapitre-6",
         start: "top 50%",
-        end: "bottom 50%",
+        end: "+=100%",
         toggleActions: "play none none none",
         markers: true
     }
@@ -265,7 +294,7 @@ gsap.to(".chapitre-6 #spaceship", {
     scrollTrigger: {
         trigger: ".chapitre-6",
         start: "top 50%",
-        end: "bottom 50%",
+        end: "+=100%",
         toggleActions: "play none none none",
         markers: true
     }
@@ -279,7 +308,7 @@ gsap.to(".chapitre-6 #spaceship", {
     scrollTrigger: {
         trigger: ".chapitre-6",
         start: "top 50%",
-        end: "bottom 50%",
+        end: "+=100%",
         toggleActions: "play none none none",
         markers: true
     }
@@ -291,7 +320,7 @@ gsap.to(".chapitre-6 #spaceship", {
 
 
 
-// animation chapitre 7 //
+/* Animation chapitre 7 */
 
 
 let text = gsap.timeline({scrollTrigger: {
@@ -334,11 +363,11 @@ console.log("messageOutput:", messageOutput);
 
 // -- chapitre 7 //
 
-// animation message //
+// Animation message //
 
 
 
-/*gsap.registerPlugin(DrawSVGPlugin);*/
+
 
 
 
