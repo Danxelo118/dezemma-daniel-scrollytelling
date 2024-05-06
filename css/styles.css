@@ -198,22 +198,40 @@ ul.technique-gsap li {
   filter: grayscale(100%);
 }
 
-.paper {
-    fill: #fff;
-    stroke: #000;
-    stroke-width: 10px;
-    fill-rule: evenodd;
-   
+.plane {
+  position: absolute;
+  visibility: hidden;
+  width: 50vw;
+  left: 35vw;
+  top: -60vh;
+  transform: rotate(15deg);
 }
 
+.plane-1,
+.plane-2 {
+  opacity: 0;
+}
+
+.paper {
+  fill: #fff;
+  position: absolute;
+  z-index: 5;
+  width: 50vw;
+  left: 35vw;
+  top: -60vh;
+  visibility: visible;
+  stroke: #000;
+  stroke-width: 5px;
+  fill-rule: evenodd;
+}
 
 .plane-1 {
   fill: #fbf9fc;
-  stroke-width: 10px;
-  visibility:hidden;
+  stroke-width: 5px;
 }
 
-.plane-1, .plane-2 {
+.plane-1,
+.plane-2 {
   stroke: #000;
   fill-rule: evenodd;
 }
@@ -221,13 +239,15 @@ ul.technique-gsap li {
 .plane-2 {
   fill: #9b7e9a;
   stroke-width: 5px;
-  visibility:hidden;
+  opacity: 0;
 }
 
-svg {
-  display: block;
-  margin: 20px auto;
-  width:400px;
+
+#message-input {
+  z-index: 8;
+}
+#submit-message {
+  z-index: 8;
 }
 
 /*---------------------------------------------------------- 
@@ -491,7 +511,7 @@ body.is-scrolling #sprite-sheet-whale {
   opacity: 0;
 }
 
-#paper {
+#paper-plane {
   width: 20vw;
   position: absolute;
   top: 20vw;

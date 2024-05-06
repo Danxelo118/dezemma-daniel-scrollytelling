@@ -1,12 +1,4 @@
 
-/* PLUGINS */
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(TextPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(MotionPath);
-
-
 /* Animation page générale */
 const ctaIcon = document.querySelector('.scroll-cta i');
 
@@ -37,6 +29,15 @@ window.addEventListener('scrollend', function () {
 });
 
 
+/* PLUGINS 
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(MotionPath);
+*/
+
+
 gsap.to(".image-header", {
     duration: 2,
     ease: "power4.inOut",
@@ -62,12 +63,27 @@ gsap.to(".chapitre-0", {
     }
 });
 
-let anim = gsap.to(".paper", {
-    morphSVG: {
-        shape: ".plane-1",
-    }
-});
+gsap.registerPlugin(MorphSVGPlugin);
 
+  gsap.to(".plane-2", {
+    scale: 1,
+    opacity: 1,
+    duration: 1,
+  });
+
+  gsap.to(".plane-1", {
+    opacity: 1,
+    duration: 1,
+  });
+
+  document.getElementById("submit-message").addEventListener("click", function () {
+    gsap.to(".paper", {
+      morphSVG: {
+        shape: ".plane-1",
+        duration: 3,
+      },
+    });
+  });
 
 // -- chapitre 0 //
 
@@ -197,19 +213,16 @@ gsap.from(".texte-3", {
         pin: true,
     },
 });
+
 gsap.set("#path-line", { drawSVG:" 0 0" });
 gsap.timeline({
-   // repeat: -1, 
+   repeat: -1, 
     scrollTrigger: {
         trigger: ".chapitre-3",
     },
 })
+.to("#path-line", { duration: 2, drawSVG: "0%" })
     .to("#path-line", { duration: 2, drawSVG: "100%" })
-    //.to("#path-line", { duration: 2, drawSVG: 50 })
-   // .to("#path-line", { duration: 1, drawSVG: 0 });;
-
-
-
 // -- chapitre 3 //
 
 
@@ -414,7 +427,7 @@ let text = gsap.timeline({
     },
 });
 
-text.to(".chapitre-7 #paper", {
+text.to(".chapitre-7 #paper-plane", {
     duration: 2,
     x: "-30vw",
     ease: "power3.inOut",
@@ -464,14 +477,14 @@ gsap.from(".texte-7", {
 // Animation message //
 
 
-/* PLUGINS 
+/* PLUGINS */
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
 gsap.registerPlugin(MotionPath);
+MorphSVGPlugin.convertToPath();
 
-*/
 
 
 

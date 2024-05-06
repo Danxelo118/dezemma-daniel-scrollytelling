@@ -50,24 +50,23 @@
 
     <section id="0" class="chapitre-0">
       <div class="text-container">
-        <textarea id="message-input"rows="5" cols="20" placeholder="Écrivez un message sur le papier..."></textarea>
-        <button id="submit-message">Submit</button>
+        <textarea id="message-input"rows="5" cols="50" placeholder="Écrivez un message sur le papier..."></textarea>
+        <button id="submit-message">Envoyer</button>
       </div>
 
       <div class="image-group">
         <img class= "image-0" src="assets/img/pink-sky.png" alt="Pink-sky">
       </div>
 
-      <div class="morph">
-        <svg>
-          <path xmlns="http://www.w3.org/2000/svg" class="paper" d="M565.26,38.257h847.02V1043H559.419s2.166-372.554,3.86-663.943C564.367,191.919,565.26,38.257,565.26,38.257Z"/>
-       
-          <path xmlns="http://www.w3.org/2000/svg" class="plane-1" d="M354,825L242,575,1380,135,794,1051,670,783l6-54Z"/>
-          <path xmlns="http://www.w3.org/2000/svg" class="plane-2" d="M678,783l684-632L356,825,680,725Z"/>
+      <svg class="paper" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+        <path class="paper" d="M565.26,38.257h847.02V1043H559.419s2.166-372.554,3.86-663.943C564.367,191.919,565.26,38.257,565.26,38.257Z"/>
       </svg>
-      </div>
-     
-
+      <svg class="plane" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+        <path class="plane-1" d="M354,825L242,575,1380,135,794,1051,670,783l6-54Z"/>
+        <path class="plane-2" d="M678,783l684-632L356,825,680,725Z"/>
+      </svg>
+      
+      
 
 
       <ul class="technique-gsap">
@@ -101,6 +100,11 @@
         <div class="montagne-2"alt="montagne verte"></div>
         <div class="montagne-3"alt="montagne mauve"></div>
       </div>
+
+      
+
+
+
       <ul class="technique-gsap">
         <li>Position X</li>
         <li>...</li>
@@ -113,7 +117,7 @@
       </ul>
     </section>
 
-
+ 
     <!-- ---------- Fin Chapitre 1 -------------------- -->
 
 
@@ -138,7 +142,7 @@
       </ul>
     </section>
 
-
+  
     <!-- ---------- Fin Chapitre 2 -------------------- -->
 
 
@@ -154,6 +158,7 @@
         <path id="path-line" d="M1 20.1992C77.8 -41.4008 139.667 59.8658 161 118.199" stroke="white"/>
         </svg>
 
+        
 
       <ul class="technique-gsap">
         <li>Position X</li>
@@ -260,7 +265,7 @@
       <div class="image-group">
         <img src="assets/img/text-bubble.png" id="bubble" alt="bulle texte">
         <p id="messageOutput"></p>
-        <img src="assets/img/plane-3 (2).png" id="paper" alt="avion-papier">
+        <img src="assets/img/plane-3 (2).png" id="paper-plane" alt="avion-papier">
       </div>
       <ul class="technique-gsap">
         <li>Timeline</li>
@@ -293,10 +298,17 @@
 
   <!-- Inclut GSAP et ScrollTrigger -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+  
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/MorphSVGPlugin.min.js"></script>
+
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.min.js"></script>
+
 
   <script src="script/script.js"></script>
 
