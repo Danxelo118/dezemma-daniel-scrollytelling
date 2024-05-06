@@ -38,8 +38,7 @@ gsap.to(".image-header", {
 });
 
 
-gsap.registerPlugin(ScrollTrigger);
-/*gsap.registerPlugin(DrawSVGPlugin);*/
+
 
 
 /* Animation chapitre 0 */
@@ -102,6 +101,16 @@ gsap.to(".montagne-2", {
     },
 });
 
+gsap.from(".texte-1", {
+    xPercent: -100,
+    duration: 1,
+    color: "var(--noir)",
+    ease: "power4.inOut",
+    scrollTrigger: {
+        trigger: ".chapitre-1",
+        pin: true,
+         },
+});
 
 // -- chapitre 1 //
 
@@ -129,7 +138,16 @@ gsap.to(".chapitre-2 #desert-ball", {
 
 
 
-
+gsap.from(".texte-2", {
+    xPercent: -100,
+    duration: 1,
+    color: "var(--noir)",
+    ease: "power4.inOut",
+    scrollTrigger: {
+        trigger: ".chapitre-2",
+        pin: true,
+         },
+});
 
 // -- chapitre 2 //
 
@@ -153,7 +171,16 @@ gsap.to(".chapitre-3 #sprite-sheet-whale", {
     }
 });
 
-
+gsap.from(".texte-3", {
+    xPercent: -100,
+    duration: 1,
+    color: "var(--noir)",
+    ease: "power4.inOut",
+    scrollTrigger: {
+        trigger: ".chapitre-3",
+        pin: true,
+         },
+});
 // -- chapitre 3 //
 
 
@@ -201,6 +228,17 @@ gsap.to(".chapitre-4 #lune-2", {
    
 });
 
+
+gsap.from(".texte-4", {
+    xPercent: -100,
+    duration: 1,
+    color: "var(--noir)",
+    ease: "power4.inOut",
+    scrollTrigger: {
+        trigger: ".chapitre-4",
+        pin: true,
+         },
+});
 // -- chapitre 4 //
 
 
@@ -254,14 +292,23 @@ planets.to(".chapitre-5 #planete-3", {
     rotation: 180,
 }, "-=0.5");
 
-
+gsap.from(".texte-5", {
+    xPercent: -100,
+    duration: 1,
+    color: "var(--noir)",
+    ease: "power4.inOut",
+    scrollTrigger: {
+        trigger: ".chapitre-5",
+        pin: true,
+         },
+});
 // -- chapitre 5 //
 
 
 
 /* Animation chapitre 6 */
 
-
+/*
 gsap.fromTo("#desert", {
     width: '100%',
     scale: 1.5,
@@ -269,7 +316,7 @@ gsap.fromTo("#desert", {
     scale: 1,
     duration: 1,
 });
-
+*/
 
 
 gsap.to(".chapitre-6 #planete-1", {
@@ -314,6 +361,17 @@ gsap.to(".chapitre-6 #spaceship", {
     }
 });
 
+
+gsap.from(".texte-6", {
+    xPercent: -100,
+    duration: 1,
+    color: "var(--noir)",
+    ease: "power4.inOut",
+    scrollTrigger: {
+        trigger: ".chapitre-6",
+        pin: true,
+         },
+});
 // -- chapitre 6 //
 
 
@@ -343,7 +401,7 @@ text.to(".chapitre-7 #bubble", {
     ease: "power4.inOut",
     });
 
-gsap.to(".chapitre-0 #message-input", {
+gsap.to(".chapitre-7 #messageOutput", {
     opacity: 1,
     duration: 0.5,
     ease: "power4.inOut",
@@ -361,13 +419,26 @@ console.log("messageOutput:", messageOutput);
       document.getElementById("message-input").value = "";
     });
 
+    gsap.from(".texte-7", {
+        xPercent: -100,
+        duration: 1,
+        color: "var(--noir)",
+        ease: "power4.inOut",
+        scrollTrigger: {
+            trigger: ".chapitre-7",
+            pin: true,
+             },
+    });
 // -- chapitre 7 //
 
 // Animation message //
 
 
-
-
+/* PLUGINS */
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(MotionPath);
 
 
 

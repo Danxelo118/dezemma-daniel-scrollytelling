@@ -170,6 +170,7 @@ ul.technique-gsap li {
   position: absolute;
   font-family: 'Komika';
   color: var(--beige);
+  z-index: 5;
   font-size: 2.5vw;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 0.5vw;
@@ -266,6 +267,7 @@ ul.technique-gsap li {
   animation-play-state: paused;
 
 }
+
 
 body.is-scrolling #sprite-sheet-bird {
   animation-play-state: running;
@@ -449,7 +451,7 @@ body.is-scrolling #sprite-sheet-whale {
   right: -15vw;
 }
 
-.message-input {
+#messageOutput {
   position: absolute;
   width: 50vw;
   top: 50vh;
