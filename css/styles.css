@@ -197,6 +197,39 @@ ul.technique-gsap li {
 
   filter: grayscale(100%);
 }
+
+.paper {
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 10px;
+    fill-rule: evenodd;
+   
+}
+
+
+.plane-1 {
+  fill: #fbf9fc;
+  stroke-width: 10px;
+  visibility:hidden;
+}
+
+.plane-1, .plane-2 {
+  stroke: #000;
+  fill-rule: evenodd;
+}
+
+.plane-2 {
+  fill: #9b7e9a;
+  stroke-width: 5px;
+  visibility:hidden;
+}
+
+svg {
+  display: block;
+  margin: 20px auto;
+  width:400px;
+}
+
 /*---------------------------------------------------------- 
 
 
@@ -248,7 +281,7 @@ ul.technique-gsap li {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 110%;
   height: 100%;
   background-image: url("../assets/img/montagne-verte.png");
   background-size: cover;
@@ -284,6 +317,10 @@ body.is-scrolling #sprite-sheet-bird {
   }
 }
 
+
+.texte-1 {
+  color: var(--noir);
+}
 /*---------------------------------------------------------- 
 
 
@@ -301,7 +338,7 @@ body.is-scrolling #sprite-sheet-bird {
   width: 10vw;
   position: relative;
   left: -50vw;
-  top: 50vh;
+  top: 10vh;
   transform: translateY(-50%);
 }
 
@@ -323,7 +360,7 @@ body.is-scrolling #sprite-sheet-bird {
   width: 30vw;
   position: relative;
   left: -50vw;
-  bottom: -80vh;
+  bottom: -70vh;
   transform: translateY(-50%);
   background-image: url("../assets/img/spritesheet_whale.png");
   background-size: cover;
@@ -375,6 +412,16 @@ body.is-scrolling #sprite-sheet-whale {
   left: 0;
 }
 
+
+#line {
+  width:322;
+  position: absolute;
+  left: 0;
+  aspect-ratio: 1/1;
+  height:216;
+  stroke-width: 0.3vw;
+  overflow: visible;
+}
 /*---------------------------------------------------------- 
 
 
@@ -452,11 +499,14 @@ body.is-scrolling #sprite-sheet-whale {
 }
 
 #messageOutput {
+  top: 40vh;
+  left: 165vh;
   position: absolute;
-  width: 50vw;
-  top: 50vh;
-  left: 20vw;
-  margin: auto;
-  z-index: 2;
+  font-family: 'Komika';
+  color: var(--beige);
+  z-index: 5;
+  font-size: 1.5vw;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  margin: 0.5vw;
 }
 /*---------------------------------------------------------- 
