@@ -92,7 +92,7 @@ header p {
   left: 0;
   width: 100%;
   font-size: 11px;
-  color: var(--blanc);
+  color: var(--space);
   background-repeat: no-repeat;
   background-size: contain;
   padding: 20px;
