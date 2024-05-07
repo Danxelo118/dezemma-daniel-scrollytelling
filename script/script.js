@@ -190,7 +190,7 @@ gsap.to(".chapitre-2 #desert-ball", {
 gsap.from(".texte-2", {
     text: "",
     duration: 2,
-    color: "var(--noir)",
+    color: "var(--beige)",
     ease: "power4.inOut",
     scrollTrigger: {
         trigger: ".chapitre-2",
@@ -224,7 +224,7 @@ gsap.from(".texte-3", {
 
     duration: 2,
     text: "",
-    color: "var(--noir)",
+    color: "var(--beige)",
     ease: "power4.inOut",
     scrollTrigger: {
         trigger: ".chapitre-3",
@@ -284,7 +284,7 @@ gsap.to(".chapitre-4 #lune-2", {
 gsap.from(".texte-4", {
     xPercent: -100,
     duration: 1,
-    color: "var(--noir)",
+    color: "var(--space)",
     ease: "power4.inOut",
     scrollTrigger: {
         trigger: ".chapitre-4",
@@ -352,7 +352,7 @@ planets.to(".chapitre-5 #planete-3", {
 gsap.from(".texte-5", {
     text: "",
     duration: 1,
-    color: "var(--noir)",
+    color: "var(--beige)",
     ease: "power4.inOut",
     scrollTrigger: {
         trigger: ".chapitre-5",
@@ -413,7 +413,7 @@ gsap.to(".chapitre-6 #spaceship", {
 gsap.from(".texte-6", {
     text: "",
     duration: 1,
-    color: "var(--noir)",
+    color: "var(--beige)",
     ease: "power4.inOut",
     scrollTrigger: {
         trigger: ".chapitre-6",
@@ -474,7 +474,7 @@ messageSubmit.addEventListener("click", function () {
 gsap.from(".texte-7", {
     text: "",
     duration: 1,
-    color: "var(--noir)",
+    color: "var(--space)",
     ease: "power4.inOut",
     scrollTrigger: {
         trigger: ".chapitre-7",

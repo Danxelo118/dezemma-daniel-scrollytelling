@@ -14,6 +14,7 @@
   --beige: #FFE2FE;
   --beige-2: #D3C1D2;
   --gris: #939196;
+  --space: #3B3355;
   --gris-2: #626868;
   --green: #273C2C;
   --noir: black;
@@ -169,7 +170,7 @@ ul.technique-gsap li {
   left: 10vh;
   position: absolute;
   font-family: 'Komika';
-  color: var(--beige);
+  color: var(--noir);
   z-index: 5;
   font-size: 2.5vw;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
