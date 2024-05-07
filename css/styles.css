@@ -215,14 +215,13 @@ ul.technique-gsap li {
 .paper {
   fill: #fff;
   position: absolute;
-  z-index: 5;
+  z-index: 4;
   width: 50vw;
   left: 35vw;
-  top: -60vh;
+  top: -31.2vh;
   visibility: visible;
   stroke: #000;
   stroke-width: 5px;
-  fill-rule: evenodd;
 }
 
 .plane-1 {
@@ -242,12 +241,20 @@ ul.technique-gsap li {
   opacity: 0;
 }
 
-
 #message-input {
-  z-index: 8;
+  z-index: 5;
+  position: absolute;
+  width: 22vw;
+  height: 58vh;
+  left: 49.5vw;
+  top: 17vh;
 }
 #submit-message {
   z-index: 8;
+  position: absolute;
+  width: 10vw;
+  left: 55vw;
+  top: 72.5vh;
 }
 
 /*---------------------------------------------------------- 
@@ -434,11 +441,9 @@ body.is-scrolling #sprite-sheet-whale {
 
 
 #line {
-  width:322;
   position: absolute;
   left: 0;
   aspect-ratio: 1/1;
-  height:216;
   stroke-width: 0.3vw;
   overflow: visible;
 }

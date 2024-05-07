@@ -65,25 +65,43 @@ gsap.to(".chapitre-0", {
 
 gsap.registerPlugin(MorphSVGPlugin);
 
-  gsap.to(".plane-2", {
-    scale: 1,
-    opacity: 1,
-    duration: 1,
-  });
 
-  gsap.to(".plane-1", {
-    opacity: 1,
-    duration: 1,
-  });
-
-  document.getElementById("submit-message").addEventListener("click", function () {
-    gsap.to(".paper", {
+document.getElementById("submit-message").addEventListener("click", function () {
+    let timeline = gsap.timeline();
+  
+    timeline.to("#message-input, #submit-message", {
+      opacity: 0,
+      duration: 1,
+      ease: "power4.inOut",
+    })
+    .to(".paper", {
       morphSVG: {
         shape: ".plane-1",
-        duration: 3,
+        duration: 2,
+        ease: "power2.inOut",
       },
-    });
+      onComplete: function() {
+        gsap.to(".paper", {
+          y: "-100vh",
+          x: "100vh",
+          duration: 3,
+          ease: "power2.inOut",
+        });
+      }
+    }, "-=1");
   });
+  
+    gsap.set("#path-line", { drawSVG:" 0 0" });
+    gsap.timeline({ 
+    scrollTrigger: {
+        trigger: ".chapitre-0",
+    },
+})
+.to("#path-line", { duration: 3, drawSVG: "0%" })
+    .to("#path-line", { duration: 3, drawSVG: "100%" })
+    .to("#path-line", { duration: 3, drawSVG: "0%" })
+   
+  
 
 // -- chapitre 0 //
 
@@ -214,15 +232,7 @@ gsap.from(".texte-3", {
     },
 });
 
-gsap.set("#path-line", { drawSVG:" 0 0" });
-gsap.timeline({
-   repeat: -1, 
-    scrollTrigger: {
-        trigger: ".chapitre-3",
-    },
-})
-.to("#path-line", { duration: 2, drawSVG: "0%" })
-    .to("#path-line", { duration: 2, drawSVG: "100%" })
+
 // -- chapitre 3 //
 
 
@@ -362,7 +372,6 @@ gsap.to(".chapitre-6 #planete-1", {
     duration: 2,
     ease: "linear",
     rotation: 360,
-    scale: 1.5,
     repeat: -1,
     scrollTrigger: {
         trigger: ".chapitre-6",
