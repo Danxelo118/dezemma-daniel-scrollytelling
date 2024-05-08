@@ -1,5 +1,8 @@
 
 /* Animation page générale */
+
+
+
 const ctaIcon = document.querySelector('.scroll-cta i');
 
 
@@ -11,22 +14,17 @@ gsap.to("#cta-icon", {
     ease: "power1.inOut"
 });
 
-
-const body = document.querySelector('is-scrolling');
-
+const body = document.body;
 let scrollTimer;
 
 window.addEventListener('scroll', function () {
-    document.body.classList.add('is-scrolling');
-
-});
-
-window.addEventListener('scrollend', function () {
+    body.classList.add('is-scrolling');
+    clearTimeout(scrollTimer);
     scrollTimer = setTimeout(function () {
-        document.body.classList.remove('is-scrolling');
+        body.classList.remove('is-scrolling');
     }, 100);
-
 });
+
 
 
 /* PLUGINS 
@@ -95,6 +93,7 @@ document.getElementById("submit-message").addEventListener("click", function () 
     gsap.timeline({ 
     scrollTrigger: {
         trigger: ".chapitre-0",
+        toggleActions: "play reset play reset",
     },
 })
 .to("#path-line", { duration: 3, drawSVG: "0%" })
@@ -120,7 +119,7 @@ gsap.to(".chapitre-1 #sprite-sheet-bird", {
         trigger: ".chapitre-1",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset play reset",
         markers: true
     }
 });
@@ -180,7 +179,7 @@ gsap.to(".chapitre-2 #desert-ball", {
         trigger: ".chapitre-2",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset play reset",
         markers: true
     }
 });
@@ -215,7 +214,7 @@ gsap.to(".chapitre-3 #sprite-sheet-whale", {
         trigger: ".chapitre-3",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset play reset",
         markers: true
     }
 });
@@ -256,7 +255,7 @@ gsap.to(".chapitre-4 #lune-1", {
         trigger: ".chapitre-4",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset play reset",
         markers: true
     }
 });
@@ -274,7 +273,7 @@ gsap.to(".chapitre-4 #lune-2", {
         trigger: ".chapitre-4",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset play reset",
         markers: true
     }
 
@@ -307,7 +306,7 @@ let planets = gsap.timeline({
         trigger: ".chapitre-5",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play reverse none reverse",
+        toggleActions: "play reverse play reverse",
         markers: true
     },
 });
@@ -377,7 +376,7 @@ gsap.to(".chapitre-6 #planete-1", {
         trigger: ".chapitre-6",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset play reset",
         markers: true
     }
 });
@@ -390,7 +389,7 @@ gsap.to(".chapitre-6 #spaceship", {
         trigger: ".chapitre-6",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset play reset",
         markers: true
     }
 });
@@ -404,7 +403,7 @@ gsap.to(".chapitre-6 #spaceship", {
         trigger: ".chapitre-6",
         start: "top 50%",
         end: "+=100%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset play reset",
         markers: true
     }
 });
