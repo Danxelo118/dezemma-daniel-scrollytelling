@@ -111,7 +111,6 @@ header p {
 main {
   display: flex;
   flex-direction: column;
-
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   overflow: hidden;
@@ -133,6 +132,7 @@ section {
 
 footer {
   color: var(--green);
+  position: relative;
   background-color: var(--beige);
   font-size: small;
   text-align: center;
@@ -217,9 +217,10 @@ ul.technique-gsap li {
   fill: #fff;
   position: absolute;
   z-index: 4;
-  width: 50vw;
-  left: 35vw;
-  top: -31.2vh;
+  width: 22vw;
+  height: 20vw;
+  left: 50vw;
+  top: 12vw;
   visibility: visible;
   stroke: #000;
   stroke-width: 5px;
@@ -246,16 +247,24 @@ ul.technique-gsap li {
   z-index: 5;
   position: absolute;
   width: 22vw;
-  height: 58vh;
-  left: 49.5vw;
-  top: 17vh;
+  height: 20vw;
+  left: 50vw;
+  top: 12vw;
 }
 #submit-message {
   z-index: 8;
   position: absolute;
   width: 10vw;
   left: 55vw;
-  top: 72.5vh;
+  top: 31vw;
+}
+
+#line {
+  position: absolute;
+  left: 0;
+  aspect-ratio: 1/1;
+  stroke-width: 0.3vw;
+  overflow: visible;
 }
 
 /*---------------------------------------------------------- 
@@ -441,13 +450,7 @@ body.is-scrolling #sprite-sheet-whale {
 }
 
 
-#line {
-  position: absolute;
-  left: 0;
-  aspect-ratio: 1/1;
-  stroke-width: 0.3vw;
-  overflow: visible;
-}
+
 /*---------------------------------------------------------- 
 
 

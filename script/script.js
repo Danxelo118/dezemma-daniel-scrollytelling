@@ -46,8 +46,6 @@ gsap.to(".image-header", {
 
 
 
-
-
 /* Animation chapitre 0 */
 
 gsap.to(".chapitre-0", {
@@ -55,7 +53,8 @@ gsap.to(".chapitre-0", {
         trigger: ".chapitre-0",
         scrub: 1,
         pin: true,
-        start: "top 10%",
+        delay: 2,
+        start: "top",
         end: "+=100%",
         toggleClass: "disappear"
     }
@@ -480,6 +479,8 @@ gsap.from(".texte-7", {
         pin: true,
     },
 });
+
+
 // -- chapitre 7 //
 
 // Animation message //
