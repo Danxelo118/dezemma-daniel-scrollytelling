@@ -47,7 +47,7 @@ gsap.to(".image-header", {
 
 
 /* Animation chapitre 0 */
-/*
+
 gsap.to(".chapitre-0", {
     scrollTrigger: {
         trigger: ".chapitre-0",
@@ -59,8 +59,8 @@ gsap.to(".chapitre-0", {
         toggleClass: "disappear"
     }
 });
-*/
 
+/*
 gsap.to('.mask', { 
     width: '100%',
     scrollTrigger: {
@@ -69,9 +69,10 @@ gsap.to('.mask', {
       scrub: true,
       markers: true,
       start: '50% 50%',
+      end: 'bottom',
     },
   })
-
+*/
 gsap.registerPlugin(MorphSVGPlugin);
 
 

@@ -205,12 +205,12 @@ ul.technique-gsap li {
 }
 
 
-/*
+
 .disappear {
 
   filter: grayscale(100%);
 }
-*/
+/*
 .mask {
   height: 100%;
   overflow: hidden;
@@ -229,7 +229,7 @@ ul.technique-gsap li {
   width: 100vw;
   height: auto;
 }
-
+*/
 
 .wrapper {
   position: relative;
