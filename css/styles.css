@@ -190,13 +190,50 @@ ul.technique-gsap li {
 .chapitre-0 {
   position: relative;
   filter: none; 
-  
-  border: red 1px solid;
 }
 
+.chapitre-0 img {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
+}
+
+
+/*
 .disappear {
 
   filter: grayscale(100%);
+}
+*/
+.mask {
+  height: 100%;
+  overflow: hidden;
+}
+
+.no-fx,
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fx,
+.no-fx {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
 }
 
 .plane {
@@ -276,7 +313,6 @@ ul.technique-gsap li {
 ----------------------------------------------------------*/
 .chapitre-1 {
   position: relative;
-  border: red 1px solid;
 }
 
 
@@ -368,7 +404,6 @@ body.is-scrolling #sprite-sheet-bird {
 .chapitre-2 {
   background-image: url("../assets/img/desert.png");
   position: relative;
-  border: red 1px solid;
 }
 
 #desert-ball {
@@ -390,7 +425,6 @@ body.is-scrolling #sprite-sheet-bird {
 .chapitre-3 {
   background-image: url("../assets/img/ocean.png");
   position: relative;
-  border: red 1px solid;
 }
 
 #sprite-sheet-whale {
@@ -432,7 +466,6 @@ body.is-scrolling #sprite-sheet-whale {
 .chapitre-4 {
   background-image: url("../assets/img/sky-night.png");
   position: relative;
-  border: red 1px solid;
 }
 
 #lune-1 {
@@ -461,7 +494,6 @@ body.is-scrolling #sprite-sheet-whale {
 .chapitre-5 {
   background-image: url("../assets/img/space-backg.png");
   position: relative;
-  border: red 1px solid;
 }
 
 
@@ -483,7 +515,6 @@ body.is-scrolling #sprite-sheet-whale {
 .chapitre-6 {
   background-image: url("../assets/img/space-back-2.png");
   position: relative;
-  border: red 1px solid;
 }
 
 #planete-1 {
@@ -509,7 +540,6 @@ body.is-scrolling #sprite-sheet-whale {
 .chapitre-7 {
   background-image: url("../assets/img/mail-box.jpg");
   position: relative;
-  border: red 1px solid;
 }
 
 #bubble {

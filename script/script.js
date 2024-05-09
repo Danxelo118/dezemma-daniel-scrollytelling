@@ -26,7 +26,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-
+gsap.registerPlugin(ScrollTrigger);
 /* PLUGINS 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
@@ -47,7 +47,7 @@ gsap.to(".image-header", {
 
 
 /* Animation chapitre 0 */
-
+/*
 gsap.to(".chapitre-0", {
     scrollTrigger: {
         trigger: ".chapitre-0",
@@ -59,6 +59,18 @@ gsap.to(".chapitre-0", {
         toggleClass: "disappear"
     }
 });
+*/
+
+gsap.to('.mask', { 
+    width: '100%',
+    scrollTrigger: {
+      trigger: ".chapitre-0",
+      pin: true,
+      scrub: true,
+      markers: true,
+      start: '50% 50%',
+    },
+  })
 
 gsap.registerPlugin(MorphSVGPlugin);
 
