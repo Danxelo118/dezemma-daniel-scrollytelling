@@ -229,13 +229,13 @@ ul.technique-gsap li {
   width: 100vw;
   height: auto;
 }
-*/
+
 
 .wrapper {
   position: relative;
   width: 100%;
 }
-
+*/
 .plane {
   position: absolute;
   visibility: hidden;
