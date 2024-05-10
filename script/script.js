@@ -62,6 +62,21 @@ gsap.to(".chapitre-0", {
 });
 
 
+let messageSubmit = document.getElementById("submit-message");
+let messageOutput = document.getElementById("messageOutput");
+
+
+
+messageSubmit.addEventListener("click", function () {
+    let message = document.getElementById("message-input").value;
+
+    console.log("messageSubmit:", messageSubmit);
+    console.log("messageOutput:", messageOutput);
+
+    messageOutput.textContent = message;
+    document.getElementById("message-input").value = "";
+});
+
 
 document.getElementById("submit-message").addEventListener("click", function () {
     let timeline = gsap.timeline();
@@ -69,20 +84,20 @@ document.getElementById("submit-message").addEventListener("click", function () 
     timeline.to("#message-input, #submit-message", {
         opacity: 0,
         duration: 1,
-        ease: "power4.inOut",
+        ease: "none",
     })
         .to(".paper", {
             morphSVG: {
                 shape: ".plane-1",
-                duration: 2,
-                ease: "power2.inOut",
+                duration: 5,
+                ease: "none",
             },
             onComplete: function () {
                 gsap.to(".paper", {
                     y: "-100vh",
                     x: "100vh",
                     duration: 3,
-                    ease: "power2.inOut",
+                    ease: "none",
                 });
             }
         }, "-=1");
@@ -160,33 +175,37 @@ gsap.from(".texte-1", {
 });
 
 
-/*
-var motionPath = [
-    { x: 50, y: 100 },
-    { x: 100, y: 50 },
-    { x: 50, y: 0 },
-    { x: 0, y: 50 },
-    { x: 50, y: 100 }
-  ];
-  
-
-  let motion = gsap.timeline({ repeat: -1, });
-  motion.to("#avion", {
-    duration: 10,
-    motionPath: {
-      path: "#motionPath",
-      align: "#motionPath",
-      autoRotate: true,
-      alignOrigin: [0.5, 0.5],
-    start: 0,
-    end: 1,
-    },
+gsap.to("#avion-2 img", {
+    duration: 6,
+    yoyo: true,
     scrollTrigger: {
-        trigger: ".chapitre-2",
+      trigger: ".chapitre-2",
+      start: "top 50%",
+      end: "+=100%",
+      toggleActions: "play reset play reset",
     },
-    ease: "power1.inOut",
+    motionPath: {
+        path: [
+    { x: 0, y: 50 },
+    { x: 80, y: 100 },
+    { x: 120, y: 90 }, 
+    { x: 220, y: 80 }, 
+    { x: 420, y: 70 },
+    { x: 620, y: 60 },
+    { x: 820, y: 90 },
+    { x: 1020, y: 70 },
+    { x: 1220, y: 90 },
+    { x: 1420, y: 70 },
+    { x: 1620, y: 80 },
+    { x: 2000, y: 60 }, 
+          ],
+        autoRotate: true,
+        curviness: 0.5,
+        start: 0.1,
+        end: 1,
+    },
+    
   });
-  */
 
 
 
@@ -239,18 +258,18 @@ gsap.to("#avion-2 img", {
     },
     motionPath: {
         path: [
-            { x: 2000, y: 60 },
-            { x: 1620, y: 80 },
-            { x: 1420, y: 70 },
-            { x: 1220, y: 90 },
-            { x: 1020, y: 70 },
-            { x: 820, y: 90 },
-            { x: 620, y: 60 },
-            { x: 420, y: 70 },
-            { x: 220, y: 80 },
-            { x: 120, y: 90 },
-            { x: 80, y: 100 },
-            { x: 0, y: 50 },
+    { x: 0, y: 50 },
+    { x: 80, y: 100 },
+    { x: 120, y: 90 }, 
+    { x: 220, y: 80 }, 
+    { x: 420, y: 70 },
+    { x: 620, y: 60 },
+    { x: 820, y: 90 },
+    { x: 1020, y: 70 },
+    { x: 1220, y: 90 },
+    { x: 1420, y: 70 },
+    { x: 1620, y: 80 },
+    { x: 2000, y: 60 }, 
           ],
         autoRotate: true,
         curviness: 0.5,
@@ -295,37 +314,7 @@ gsap.from(".texte-3", {
 });
 
 
-gsap.to("#avion-3 img", {
-    duration: 6,
-    yoyo: true,
-    scrollTrigger: {
-      trigger: ".chapitre-3",
-      start: "top 50%",
-      end: "+=100%",
-      toggleActions: "play reset play reset",
-    },
-    motionPath: {
-        path: [
-    { x: 0, y: 50 },
-    { x: 80, y: 100 },
-    { x: 120, y: 90 }, 
-    { x: 220, y: 80 }, 
-    { x: 420, y: 70 },
-    { x: 620, y: 60 },
-    { x: 820, y: 90 },
-    { x: 1020, y: 70 },
-    { x: 1220, y: 90 },
-    { x: 1420, y: 70 },
-    { x: 1620, y: 80 },
-    { x: 2000, y: 60 }, 
-          ],
-        autoRotate: true,
-        curviness: 0.5,
-        start: 0.1,
-        end: 1,
-    },
-    
-  });
+
 // -- chapitre 3 //
 
 
@@ -385,7 +374,37 @@ gsap.from(".texte-4", {
     },
 });
 
-
+gsap.to("#avion-4 img", {
+    duration: 6,
+    yoyo: true,
+    scrollTrigger: {
+      trigger: ".chapitre-4",
+      start: "top 50%",
+      end: "+=100%",
+      toggleActions: "play reset play reset",
+    },
+    motionPath: {
+        path: [
+    { x: 0, y: 50 },
+    { x: 80, y: 100 },
+    { x: 120, y: 90 }, 
+    { x: 220, y: 80 }, 
+    { x: 420, y: 70 },
+    { x: 620, y: 60 },
+    { x: 820, y: 90 },
+    { x: 1020, y: 70 },
+    { x: 1220, y: 90 },
+    { x: 1420, y: 70 },
+    { x: 1620, y: 80 },
+    { x: 2000, y: 60 }, 
+          ],
+        autoRotate: true,
+        curviness: 0.5,
+        start: 0.1,
+        end: 1,
+    },
+    
+  });
 
 // -- chapitre 4 //
 
@@ -452,6 +471,42 @@ gsap.from(".texte-5", {
         pin: true,
     },
 });
+
+
+gsap.to("#avion-6 img", {
+    duration: 6,
+    yoyo: true,
+    scrollTrigger: {
+      trigger: ".chapitre-6",
+      start: "top 50%",
+      end: "+=100%",
+      toggleActions: "play reset play reset",
+    },
+    motionPath: {
+        path: [
+    { x: 0, y: 50 },
+    { x: 80, y: 100 },
+    { x: 120, y: 90 }, 
+    { x: 220, y: 80 }, 
+    { x: 420, y: 70 },
+    { x: 620, y: 60 },
+    { x: 820, y: 90 },
+    { x: 1020, y: 70 },
+    { x: 1220, y: 90 },
+    { x: 1420, y: 70 },
+    { x: 1620, y: 80 },
+    { x: 2000, y: 60 }, 
+          ],
+        autoRotate: true,
+        curviness: 0.5,
+        start: 0.1,
+        end: 1,
+    },
+    
+  });
+
+
+
 // -- chapitre 5 //
 
 
@@ -541,28 +596,16 @@ text.to(".chapitre-7 #bubble", {
     opacity: 1,
     duration: 0.5,
     ease: "power4.inOut",
+    onComplete: function () {
+        gsap.to(".chapitre-7 #messageOutput", {
+            opacity: 1,
+            duration: 0.5,
+            ease: "power4.inOut",
+        });
+    },
 });
 
-gsap.to(".chapitre-7 #messageOutput", {
-    opacity: 1,
-    duration: 0.5,
-    ease: "power4.inOut",
-})
 
-let messageSubmit = document.getElementById("submit-message");
-let messageOutput = document.getElementById("messageOutput");
-
-
-
-messageSubmit.addEventListener("click", function () {
-    let message = document.getElementById("message-input").value;
-
-    console.log("messageSubmit:", messageSubmit);
-    console.log("messageOutput:", messageOutput);
-
-    messageOutput.textContent = message;
-    document.getElementById("message-input").value = "";
-});
 
 gsap.from(".texte-7", {
     text: "",

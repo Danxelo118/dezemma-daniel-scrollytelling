@@ -358,54 +358,14 @@ body.is-scrolling #sprite-sheet-bird {
   color: var(--noir);
 }
 
-/*
+
 #avion-1 img {
   width: 10vw;
   position: absolute;
-  left: 10vw;
-  top: 10vh;
-}
-*/
-#avion-2 img {
-  width: 10vw;
-  position: absolute;
-  left: 70vw;
+  left: 90vw;
   top: 10vh;
   z-index: 5;
 }
-
-#avion-3 img {
-  width: 10vw;
-  position: absolute;
-  left: 10vw;
-  top: 10vh;
-}
-
-/*
-#avion-4 img {
-  width: 10vw;
-  position: absolute;
-  left: 10vw;
-  top: 10vh;
-}
-
-
-#avion-5 img {
-  width: 10vw;
-  position: absolute;
-  left: 10vw;
-  top: 10vh;
-}
-
-
-#avion-6 img {
-  width: 10vw;
-  position: absolute;
-  left: 10vw;
-  top: 10vh;
-}
-*/
-
 
 
 /*---------------------------------------------------------- 
@@ -426,6 +386,14 @@ body.is-scrolling #sprite-sheet-bird {
   left: -50vw;
   top: 10vh;
   transform: translateY(-50%);
+}
+
+
+#avion-2 img {
+  width: 10vw;
+  position: absolute;
+  left: -10vw;
+  top: 10vh;
 }
 
 /*---------------------------------------------------------- 
@@ -468,7 +436,12 @@ body.is-scrolling #sprite-sheet-whale {
   animation-play-state: running;
 }
 
-
+#avion-3 img {
+  width: 10vw;
+  position: absolute;
+  left: 90vw;
+  top: 10vh;
+}
 /*---------------------------------------------------------- 
 
 
@@ -496,7 +469,13 @@ body.is-scrolling #sprite-sheet-whale {
   left: 0;
 }
 
-
+#avion-4 img {
+  width: 10vw;
+   position: absolute;
+   left: -10vw;
+   top: 10vh;
+ }
+ 
 
 /*---------------------------------------------------------- 
 
@@ -519,6 +498,14 @@ body.is-scrolling #sprite-sheet-whale {
   width: 30vw;
 }
 
+#avion-5 img {
+  width: 10vw;
+  position: absolute;
+  left: 90vw;
+  top: 10vh;
+}
+
+
 /*---------------------------------------------------------
 
 
@@ -536,12 +523,12 @@ body.is-scrolling #sprite-sheet-whale {
   z-index: 1;
 }
 
-#desert {
-  width: 6vw;
+
+#avion-6 img {
+  width: 10vw;
   position: absolute;
-  left: 68vw;
-  bottom: 20vw;
-  z-index: -1;
+  left: -10vw;
+  top: 10vh;
 }
 /*---------------------------------------------------------- 
 
@@ -565,21 +552,23 @@ body.is-scrolling #sprite-sheet-whale {
 }
 
 #paper-plane {
-  width: 20vw;
+  width: 10vw;
   position: absolute;
   top: 20vw;
   right: -15vw;
 }
 
 #messageOutput {
-  top: 40vh;
-  left: 165vh;
+  top: 18vw;
+  left: 75vw;
   position: absolute;
   font-family: 'Komika';
   color: var(--beige);
   z-index: 5;
+  opacity: 0;
   font-size: 1.5vw;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 0.5vw;
+  
 }
 /*---------------------------------------------------------- 
