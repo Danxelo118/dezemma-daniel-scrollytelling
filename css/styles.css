@@ -189,53 +189,16 @@ ul.technique-gsap li {
 
 .chapitre-0 {
   position: relative;
+  background-image: url("../assets/img/pink-sky.png");
   filter: none; 
 }
 
-.chapitre-0 img {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  scroll-snap-align: start;
-  background-attachment: fixed;
-}
-
-
 
 .disappear {
-
   filter: grayscale(100%);
 }
-/*
-.mask {
-  height: 100%;
-  overflow: hidden;
-}
-
-.no-fx,
-.mask {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.fx,
-.no-fx {
-  display: block;
-  width: 100vw;
-  height: auto;
-}
 
 
-.wrapper {
-  position: relative;
-  width: 100%;
-}
-*/
 .plane {
   position: absolute;
   visibility: hidden;
@@ -394,6 +357,57 @@ body.is-scrolling #sprite-sheet-bird {
 .texte-1 {
   color: var(--noir);
 }
+
+/*
+#avion-1 img {
+  width: 10vw;
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+}
+*/
+#avion-2 img {
+  width: 10vw;
+  position: absolute;
+  left: 70vw;
+  top: 10vh;
+  z-index: 5;
+}
+
+#avion-3 img {
+  width: 10vw;
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+}
+
+/*
+#avion-4 img {
+  width: 10vw;
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+}
+
+
+#avion-5 img {
+  width: 10vw;
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+}
+
+
+#avion-6 img {
+  width: 10vw;
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+}
+*/
+
+
+
 /*---------------------------------------------------------- 
 
 

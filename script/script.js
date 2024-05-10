@@ -2,7 +2,6 @@
 /* Animation page générale */
 
 
-
 const ctaIcon = document.querySelector('.scroll-cta i');
 
 
@@ -26,14 +25,16 @@ window.addEventListener('scroll', function () {
 });
 
 
-gsap.registerPlugin(ScrollTrigger);
-/* PLUGINS 
+
+// plugins //
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(MotionPath);
-*/
+gsap.registerPlugin(MotionPathPlugin);
+
+// plugins //
 
 
 gsap.to(".image-header", {
@@ -41,7 +42,7 @@ gsap.to(".image-header", {
     ease: "power4.inOut",
     y: "-100vh",
     x: "100vh",
-    
+
 });
 
 
@@ -60,59 +61,45 @@ gsap.to(".chapitre-0", {
     }
 });
 
-/*
-gsap.to('.mask', { 
-    width: '100%',
-    scrollTrigger: {
-      trigger: ".chapitre-0",
-      pin: true,
-      scrub: true,
-      markers: true,
-      start: '50% 50%',
-      end: 'bottom',
-    },
-  })
-*/
-gsap.registerPlugin(MorphSVGPlugin);
 
 
 document.getElementById("submit-message").addEventListener("click", function () {
     let timeline = gsap.timeline();
-  
+
     timeline.to("#message-input, #submit-message", {
-      opacity: 0,
-      duration: 1,
-      ease: "power4.inOut",
+        opacity: 0,
+        duration: 1,
+        ease: "power4.inOut",
     })
-    .to(".paper", {
-      morphSVG: {
-        shape: ".plane-1",
-        duration: 2,
-        ease: "power2.inOut",
-      },
-      onComplete: function() {
-        gsap.to(".paper", {
-          y: "-100vh",
-          x: "100vh",
-          duration: 3,
-          ease: "power2.inOut",
-        });
-      }
-    }, "-=1");
-  });
-  
-    gsap.set("#path-line", { drawSVG:" 0 0" });
-    gsap.timeline({ 
+        .to(".paper", {
+            morphSVG: {
+                shape: ".plane-1",
+                duration: 2,
+                ease: "power2.inOut",
+            },
+            onComplete: function () {
+                gsap.to(".paper", {
+                    y: "-100vh",
+                    x: "100vh",
+                    duration: 3,
+                    ease: "power2.inOut",
+                });
+            }
+        }, "-=1");
+});
+
+gsap.set("#path-line", { drawSVG: " 0 0" });
+gsap.timeline({
     scrollTrigger: {
         trigger: ".chapitre-0",
         toggleActions: "play reset play reset",
     },
 })
-.to("#path-line", { duration: 3, drawSVG: "0%" })
+    .to("#path-line", { duration: 3, drawSVG: "0%" })
     .to("#path-line", { duration: 3, drawSVG: "100%" })
     .to("#path-line", { duration: 3, drawSVG: "0%" })
-   
-  
+
+
 
 // -- chapitre 0 //
 
@@ -172,6 +159,37 @@ gsap.from(".texte-1", {
     },
 });
 
+
+/*
+var motionPath = [
+    { x: 50, y: 100 },
+    { x: 100, y: 50 },
+    { x: 50, y: 0 },
+    { x: 0, y: 50 },
+    { x: 50, y: 100 }
+  ];
+  
+
+  let motion = gsap.timeline({ repeat: -1, });
+  motion.to("#avion", {
+    duration: 10,
+    motionPath: {
+      path: "#motionPath",
+      align: "#motionPath",
+      autoRotate: true,
+      alignOrigin: [0.5, 0.5],
+    start: 0,
+    end: 1,
+    },
+    scrollTrigger: {
+        trigger: ".chapitre-2",
+    },
+    ease: "power1.inOut",
+  });
+  */
+
+
+
 // -- chapitre 1 //
 
 
@@ -197,7 +215,6 @@ gsap.to(".chapitre-2 #desert-ball", {
 });
 
 
-
 gsap.from(".texte-2", {
     text: "",
     duration: 2,
@@ -208,6 +225,40 @@ gsap.from(".texte-2", {
         pin: true,
     },
 });
+
+
+
+gsap.to("#avion-2 img", {
+    duration: 6,
+    yoyo: true,
+    scrollTrigger: {
+      trigger: ".chapitre-2",
+      start: "top 50%",
+      end: "+=100%",
+      toggleActions: "play reset play reset",
+    },
+    motionPath: {
+        path: [
+            { x: 2000, y: 60 },
+            { x: 1620, y: 80 },
+            { x: 1420, y: 70 },
+            { x: 1220, y: 90 },
+            { x: 1020, y: 70 },
+            { x: 820, y: 90 },
+            { x: 620, y: 60 },
+            { x: 420, y: 70 },
+            { x: 220, y: 80 },
+            { x: 120, y: 90 },
+            { x: 80, y: 100 },
+            { x: 0, y: 50 },
+          ],
+        autoRotate: true,
+        curviness: 0.5,
+        start: 0.1,
+        end: 1,
+    },
+    
+  });
 
 // -- chapitre 2 //
 
@@ -244,6 +295,37 @@ gsap.from(".texte-3", {
 });
 
 
+gsap.to("#avion-3 img", {
+    duration: 6,
+    yoyo: true,
+    scrollTrigger: {
+      trigger: ".chapitre-3",
+      start: "top 50%",
+      end: "+=100%",
+      toggleActions: "play reset play reset",
+    },
+    motionPath: {
+        path: [
+    { x: 0, y: 50 },
+    { x: 80, y: 100 },
+    { x: 120, y: 90 }, 
+    { x: 220, y: 80 }, 
+    { x: 420, y: 70 },
+    { x: 620, y: 60 },
+    { x: 820, y: 90 },
+    { x: 1020, y: 70 },
+    { x: 1220, y: 90 },
+    { x: 1420, y: 70 },
+    { x: 1620, y: 80 },
+    { x: 2000, y: 60 }, 
+          ],
+        autoRotate: true,
+        curviness: 0.5,
+        start: 0.1,
+        end: 1,
+    },
+    
+  });
 // -- chapitre 3 //
 
 
@@ -477,7 +559,7 @@ messageSubmit.addEventListener("click", function () {
 
     console.log("messageSubmit:", messageSubmit);
     console.log("messageOutput:", messageOutput);
-    
+
     messageOutput.textContent = message;
     document.getElementById("message-input").value = "";
 });
@@ -493,19 +575,10 @@ gsap.from(".texte-7", {
     },
 });
 
-
 // -- chapitre 7 //
 
 // Animation message //
 
-
-/* PLUGINS */
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(TextPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(MotionPath);
-MorphSVGPlugin.convertToPath();
 
 
 
