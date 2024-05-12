@@ -4,39 +4,39 @@
 ## Problème #1
 
 ### Ressources qui bloquent l'affichage
-[Insérez ici le nom du problème]
+Des URL dans le fichier HTML qui bloquent l'affichage des rendus de la page.
 
 ### Action concrète 
-[Je dois enlever les ressources HTML qui bloquent l'affichage de la page en enlevant le lien du google font et stylesheet car ils sont inutiles vu que j'utilise Font Face dans le CSS pour utiliser une police.]
+Je dois enlever les liens Google Font HTML qui bloquent l'affichage de la page car ils sont inutiles vu que j'utilise Font Face dans le CSS pour utiliser une police.
 
 ### Résultats
 Cela a marché, j'ai juste enlevé le code qui comportait les liens de Google Font.
 
 ## Problème #2
 
-### Des images n'ont pas de width ou height définis
-[Insérez ici le nom du problème]
+### Des images n'ont pas de dimensions définis
+Mes images n'ont pas de height définies donc cela réduit les changements de disposition et le décalage cumulatif de la mise en page (CLS) des images.
 
 ### Action concrète 
-[Je dois changer et ajouter des nouvelles dimensions à mes images, notamment mes images d'avion.]
+Je dois changer et ajouter des nouvelles dimensions à mes images, notamment mes images d'animations en utilisant des max-width et height.
 
 ### Résultats
 Cela a marché, j'ai utlisé height: auto et max-width: 100% pour résoudre le problème.
 
 ## Problème #3
 
-### Reporter images les images hors-écran
-[Insérez ici le nom du problème]
+### Enregistrement d'erreurs dans la console 
+Il y a des erreurs dans la console qui indiquaient l'apparition d'images HMTL ou de connexions avec le fichier CSS et Javascript.
 
 ### Action concrète 
-[Insérez ici la ou les actions concrètes à prendre pour résoudre le problème, en nommant les fichiers ou ressources concernées]
+ Je dois compresser le dossier du projet en zip et j'ai extrait le dossier dans le site danielsebastien-momo.com et réouvert dans la navigateur.
 
 ### Résultats
-
+Cela a marché, mais j'ai du ouvrir une page pageSpeed Insights car l'ancien ne correspondait plus. Voici le lien: [Page Speed Insights - Rapport du 12 mai 2024, 3:17:28 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/dkrbioj1ze?form_factor=desktop)
 
 # Rapport d’optimisation du projet ScrollyTelling
 
-[Page Speed Insights - Rapport du 12 mai 2024, 2:04:31 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/dkrbioj1ze?form_factor=desktop)
+[Page Speed Insights - Rapport du 12 mai 2024, 2:04:31 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/05bb5eocx2?form_factor=desktop)
 
 
 
