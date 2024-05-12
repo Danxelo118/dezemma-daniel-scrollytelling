@@ -29,10 +29,10 @@ window.addEventListener('scroll', function () {
 // plugins //
 
 gsap.registerPlugin(ScrollTrigger);
-/*gsap.registerPlugin(DrawSVGPlugin);*/
+gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(TextPlugin);
 /*gsap.registerPlugin(MorphSVGPlugin);*/
-gsap.registerPlugin(MotionPathPlugin);
+/*gsap.registerPlugin(DrawSVGPlugin);*/
 
 // plugins //
 
@@ -172,7 +172,7 @@ gsap.from(".texte-1", {
     },
 });
 
-MotionPath
+MotionPathPlugin
 gsap.to("#avion-1 img", {
     duration: 6,
     yoyo: true,
@@ -243,7 +243,7 @@ gsap.from(".texte-2", {
 });
 
 
-MotionPath
+MotionPathPlugin
 gsap.to("#avion-2 img", {
     duration: 6,
     yoyo: true,
@@ -309,7 +309,7 @@ gsap.from(".texte-3", {
     },
 });
 
-MotionPath
+MotionPathPlugin
 gsap.to("#avion-3 img", {
     duration: 6,
     yoyo: true,
@@ -400,7 +400,7 @@ gsap.from(".texte-4", {
     },
 });
 
-MotionPath
+MotionPathPlugin
 gsap.to("#avion-4 img", {
     duration: 6,
     yoyo: true,
@@ -482,7 +482,7 @@ gsap.from(".texte-5", {
     },
 });
 
-MotionPath
+MotionPathPlugin
 gsap.to("#avion-5 img", {
     duration: 6,
     yoyo: true,
@@ -576,7 +576,7 @@ gsap.from(".texte-6", {
     },
 });
 
-MotionPath
+MotionPathPlugin
 gsap.to("#avion-6 img", {
     duration: 6,
     yoyo: true,
