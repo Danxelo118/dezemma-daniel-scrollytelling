@@ -31,8 +31,8 @@ window.addEventListener('scroll', function () {
 gsap.registerPlugin(ScrollTrigger);
 /*gsap.registerPlugin(DrawSVGPlugin);*/
 gsap.registerPlugin(TextPlugin);
-/*gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(MotionPathPlugin);*/
+/*gsap.registerPlugin(MorphSVGPlugin);*/
+gsap.registerPlugin(MotionPathPlugin);
 
 // plugins //
 
@@ -172,7 +172,7 @@ gsap.from(".texte-1", {
     },
 });
 
-/*MotionPath
+MotionPath
 gsap.to("#avion-1 img", {
     duration: 6,
     yoyo: true,
@@ -204,7 +204,7 @@ gsap.to("#avion-1 img", {
     },
 
 });
-*/
+
 
 
 // -- chapitre 1 //
@@ -243,7 +243,7 @@ gsap.from(".texte-2", {
 });
 
 
-/*MotionPath
+MotionPath
 gsap.to("#avion-2 img", {
     duration: 6,
     yoyo: true,
@@ -276,7 +276,7 @@ gsap.to("#avion-2 img", {
     },
 
 });
-*/
+
 // -- chapitre 2 //
 
 
@@ -309,7 +309,7 @@ gsap.from(".texte-3", {
     },
 });
 
-/*MotionPath
+MotionPath
 gsap.to("#avion-3 img", {
     duration: 6,
     yoyo: true,
@@ -342,7 +342,7 @@ gsap.to("#avion-3 img", {
     },
 
 });
-*/
+
 // -- chapitre 3 //
 
 
@@ -400,7 +400,7 @@ gsap.from(".texte-4", {
     },
 });
 
-/*MotionPath
+MotionPath
 gsap.to("#avion-4 img", {
     duration: 6,
     yoyo: true,
@@ -433,7 +433,7 @@ gsap.to("#avion-4 img", {
     },
 
 });
-*/
+
 // -- chapitre 4 //
 
 
@@ -482,7 +482,7 @@ gsap.from(".texte-5", {
     },
 });
 
-/*MotionPath
+MotionPath
 gsap.to("#avion-5 img", {
     duration: 6,
     yoyo: true,
@@ -514,7 +514,7 @@ gsap.to("#avion-5 img", {
     },
 
 });
-*/
+
 
 
 // -- chapitre 5 //
@@ -576,7 +576,7 @@ gsap.from(".texte-6", {
     },
 });
 
-/*MotionPath
+MotionPath
 gsap.to("#avion-6 img", {
     duration: 6,
     yoyo: true,
@@ -608,7 +608,7 @@ gsap.to("#avion-6 img", {
         end: 1,
     },
 
-});*/
+});
 // -- chapitre 6 //
 
 
