@@ -31,8 +31,8 @@ window.addEventListener('scroll', function () {
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(TextPlugin);
-/*gsap.registerPlugin(MorphSVGPlugin);*/
-/*gsap.registerPlugin(DrawSVGPlugin);*/
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 // plugins //
 
@@ -85,26 +85,24 @@ document.getElementById("submit-message").addEventListener("click", function () 
         duration: 1,
         ease: "none",
     })
-    /*MorphSVG
-        .to(".paper", { 
-            morphSVG: {
-                shape: ".plane-1",
-                duration: 5,
+    gsap.to(".paper", {
+        morphSVG: ".plane-1",
+        duration: 1,
+        ease: "none",
+        onComplete: function () {
+            gsap.to(".paper", {
+                y: "-100vh",
+                x: "100vh",
+                duration: 2,
                 ease: "none",
-            },
-            onComplete: function () {
-                gsap.to(".paper", {
-                    y: "-100vh",
-                    x: "100vh",
-                    duration: 2,
-                    ease: "none",
-                });
-            }
-        }, "-=1");*/
+            });
+        }
+    }, "-=1");
 });
 
-/*DrawSVG
-gsap.set("#path-line", { drawSVG: " 0 0" });
+DrawSVGPlugin
+gsap.set("#path-line", { drawSVG: "0%" });
+
 gsap.timeline({
     scrollTrigger: {
         trigger: ".chapitre-0",
@@ -114,7 +112,7 @@ gsap.timeline({
     .to("#path-line", { duration: 3, drawSVG: "0%" })
     .to("#path-line", { duration: 3, drawSVG: "100%" })
     .to("#path-line", { duration: 3, drawSVG: "0%" })
-*/
+
 
 
 // -- chapitre 0 //
