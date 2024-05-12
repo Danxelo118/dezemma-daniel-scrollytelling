@@ -190,7 +190,7 @@ ul.technique-gsap li {
 .chapitre-0 {
   position: relative;
   background-image: url("../assets/img/pink-sky.png");
-  filter: none; 
+  filter: none;
 }
 
 
@@ -251,6 +251,7 @@ ul.technique-gsap li {
   left: 50vw;
   top: 12vw;
 }
+
 #submit-message {
   z-index: 8;
   position: absolute;
@@ -442,6 +443,7 @@ body.is-scrolling #sprite-sheet-whale {
   left: 90vw;
   top: 10vh;
 }
+
 /*---------------------------------------------------------- 
 
 
@@ -471,11 +473,11 @@ body.is-scrolling #sprite-sheet-whale {
 
 #avion-4 img {
   width: 10vw;
-   position: absolute;
-   left: -10vw;
-   top: 10vh;
- }
- 
+  position: absolute;
+  left: -10vw;
+  top: 10vh;
+}
+
 
 /*---------------------------------------------------------- 
 
@@ -530,6 +532,7 @@ body.is-scrolling #sprite-sheet-whale {
   left: -10vw;
   top: 10vh;
 }
+
 /*---------------------------------------------------------- 
 
 
@@ -569,6 +572,7 @@ body.is-scrolling #sprite-sheet-whale {
   font-size: 1.5vw;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 0.5vw;
-  
+
 }
+
 /*---------------------------------------------------------- 

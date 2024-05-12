@@ -77,7 +77,6 @@ messageSubmit.addEventListener("click", function () {
     document.getElementById("message-input").value = "";
 });
 
-
 document.getElementById("submit-message").addEventListener("click", function () {
     let timeline = gsap.timeline();
 
@@ -134,7 +133,6 @@ gsap.to(".chapitre-1 #sprite-sheet-bird", {
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reset play reset",
-        markers: true
     }
 });
 
@@ -147,7 +145,6 @@ gsap.to(".montagne-3", {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        markers: true,
     },
 });
 
@@ -159,7 +156,6 @@ gsap.to(".montagne-2", {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        markers: true,
     },
 });
 
@@ -179,17 +175,17 @@ gsap.to("#avion-1 img", {
     duration: 6,
     yoyo: true,
     scrollTrigger: {
-      trigger: ".chapitre-1",
-      start: "top 50%",
-      end: "+=100%",
-      toggleActions: "play reset play reset",
+        trigger: ".chapitre-1",
+        start: "top 50%",
+        end: "+=100%",
+        toggleActions: "play reset play reset",
     },
     motionPath: {
         path: [
             { x: 0, y: 50 },
             { x: -80, y: 100 },
-            { x: -120, y: 90 }, 
-            { x: -220, y: 80 }, 
+            { x: -120, y: 90 },
+            { x: -220, y: 80 },
             { x: -420, y: 70 },
             { x: -620, y: 60 },
             { x: -820, y: 90 },
@@ -197,15 +193,15 @@ gsap.to("#avion-1 img", {
             { x: -1220, y: 90 },
             { x: -1420, y: 70 },
             { x: -1620, y: 80 },
-            { x: -2000, y: 60 }, 
+            { x: -2000, y: 60 },
             { x: -3000, y: 80 },
-          ],
+        ],
         curviness: 0.5,
         start: 0.1,
         end: 1,
     },
-    
-  });
+
+});
 
 
 
@@ -229,7 +225,6 @@ gsap.to(".chapitre-2 #desert-ball", {
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reset play reset",
-        markers: true
     }
 });
 
@@ -251,34 +246,34 @@ gsap.to("#avion-2 img", {
     duration: 6,
     yoyo: true,
     scrollTrigger: {
-      trigger: ".chapitre-2",
-      start: "top 50%",
-      end: "+=100%",
-      toggleActions: "play reset play reset",
+        trigger: ".chapitre-2",
+        start: "top 50%",
+        end: "+=100%",
+        toggleActions: "play reset play reset",
     },
     motionPath: {
         path: [
-    { x: 0, y: 50 },
-    { x: 80, y: 100 },
-    { x: 120, y: 90 }, 
-    { x: 220, y: 80 }, 
-    { x: 420, y: 70 },
-    { x: 620, y: 60 },
-    { x: 820, y: 90 },
-    { x: 1020, y: 70 },
-    { x: 1220, y: 90 },
-    { x: 1420, y: 70 },
-    { x: 1620, y: 80 },
-    { x: 2000, y: 60 }, 
-    { x: 3000, y: 80 },
-          ],
+            { x: 0, y: 50 },
+            { x: 80, y: 100 },
+            { x: 120, y: 90 },
+            { x: 220, y: 80 },
+            { x: 420, y: 70 },
+            { x: 620, y: 60 },
+            { x: 820, y: 90 },
+            { x: 1020, y: 70 },
+            { x: 1220, y: 90 },
+            { x: 1420, y: 70 },
+            { x: 1620, y: 80 },
+            { x: 2000, y: 60 },
+            { x: 3000, y: 80 },
+        ],
         autoRotate: true,
         curviness: 0.5,
         start: 0.1,
         end: 1,
     },
-    
-  });
+
+});
 
 // -- chapitre 2 //
 
@@ -298,12 +293,10 @@ gsap.to(".chapitre-3 #sprite-sheet-whale", {
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reset play reset",
-        markers: true
     }
 });
 
 gsap.from(".texte-3", {
-
     duration: 2,
     text: "",
     color: "var(--beige)",
@@ -318,17 +311,17 @@ gsap.to("#avion-3 img", {
     duration: 6,
     yoyo: true,
     scrollTrigger: {
-      trigger: ".chapitre-3",
-      start: "top 50%",
-      end: "+=100%",
-      toggleActions: "play reset play reset",
+        trigger: ".chapitre-3",
+        start: "top 50%",
+        end: "+=100%",
+        toggleActions: "play reset play reset",
     },
     motionPath: {
         path: [
             { x: 0, y: 50 },
             { x: -80, y: 100 },
-            { x: -120, y: 90 }, 
-            { x: -220, y: 80 }, 
+            { x: -120, y: 90 },
+            { x: -220, y: 80 },
             { x: -420, y: 70 },
             { x: -620, y: 60 },
             { x: -820, y: 90 },
@@ -337,15 +330,15 @@ gsap.to("#avion-3 img", {
             { x: -1420, y: 70 },
             { x: -1620, y: 80 },
             { x: -2000, y: 60 },
-            { x: -3000, y: 80 }, 
-          ],
-      autoRotate: false,
+            { x: -3000, y: 80 },
+        ],
+        autoRotate: false,
         curviness: 0.5,
         start: 0.1,
         end: 1,
     },
-    
-  });
+
+});
 
 // -- chapitre 3 //
 
@@ -371,7 +364,6 @@ gsap.to(".chapitre-4 #lune-1", {
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reset play reset",
-        markers: true
     }
 });
 
@@ -389,7 +381,6 @@ gsap.to(".chapitre-4 #lune-2", {
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reset play reset",
-        markers: true
     }
 
 });
@@ -410,34 +401,34 @@ gsap.to("#avion-4 img", {
     duration: 6,
     yoyo: true,
     scrollTrigger: {
-      trigger: ".chapitre-4",
-      start: "top 50%",
-      end: "+=100%",
-      toggleActions: "play reset play reset",
+        trigger: ".chapitre-4",
+        start: "top 50%",
+        end: "+=100%",
+        toggleActions: "play reset play reset",
     },
     motionPath: {
         path: [
-    { x: 0, y: 50 },
-    { x: 80, y: 100 },
-    { x: 120, y: 90 }, 
-    { x: 220, y: 80 }, 
-    { x: 420, y: 70 },
-    { x: 620, y: 60 },
-    { x: 820, y: 90 },
-    { x: 1020, y: 70 },
-    { x: 1220, y: 90 },
-    { x: 1420, y: 70 },
-    { x: 1620, y: 80 },
-    { x: 2000, y: 60 }, 
-    { x: 3000, y: 80 },
-          ],
+            { x: 0, y: 50 },
+            { x: 80, y: 100 },
+            { x: 120, y: 90 },
+            { x: 220, y: 80 },
+            { x: 420, y: 70 },
+            { x: 620, y: 60 },
+            { x: 820, y: 90 },
+            { x: 1020, y: 70 },
+            { x: 1220, y: 90 },
+            { x: 1420, y: 70 },
+            { x: 1620, y: 80 },
+            { x: 2000, y: 60 },
+            { x: 3000, y: 80 },
+        ],
         autoRotate: true,
         curviness: 0.5,
         start: 0.1,
         end: 1,
     },
-    
-  });
+
+});
 
 // -- chapitre 4 //
 
@@ -453,7 +444,6 @@ let planets = gsap.timeline({
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reverse play reverse",
-        markers: true
     },
 });
 
@@ -475,24 +465,7 @@ planets.to(".chapitre-5 #planete-3", {
     yoyo: true,
 }, "-=0.5");
 
-planets.to(".chapitre-5 #planete-2", {
-    duration: 3,
-    ease: "linear",
-    repeat: -1,
-    yoyo: true,
-    y: 0,
-    rotation: 180,
-});
 
-
-planets.to(".chapitre-5 #planete-3", {
-    duration: 3,
-    ease: "linear",
-    repeat: -1,
-    yoyo: true,
-    y: 0,
-    rotation: 180,
-}, "-=0.5");
 
 gsap.from(".texte-5", {
     text: "",
@@ -510,17 +483,17 @@ gsap.to("#avion-5 img", {
     duration: 6,
     yoyo: true,
     scrollTrigger: {
-      trigger: ".chapitre-5",
-      start: "top 50%",
-      end: "+=100%",
-      toggleActions: "play reset play reset",
+        trigger: ".chapitre-5",
+        start: "top 50%",
+        end: "+=100%",
+        toggleActions: "play reset play reset",
     },
     motionPath: {
         path: [
             { x: 0, y: 50 },
             { x: -80, y: 100 },
-            { x: -120, y: 90 }, 
-            { x: -220, y: 80 }, 
+            { x: -120, y: 90 },
+            { x: -220, y: 80 },
             { x: -420, y: 70 },
             { x: -620, y: 60 },
             { x: -820, y: 90 },
@@ -528,15 +501,15 @@ gsap.to("#avion-5 img", {
             { x: -1220, y: 90 },
             { x: -1420, y: 70 },
             { x: -1620, y: 80 },
-            { x: -2000, y: 60 }, 
-            { x: -3000, y: 80 }, 
-          ],
+            { x: -2000, y: 60 },
+            { x: -3000, y: 80 },
+        ],
         curviness: 0.5,
         start: 0.1,
         end: 1,
     },
-    
-  });
+
+});
 
 
 
@@ -559,7 +532,6 @@ gsap.to(".chapitre-6 #planete-1", {
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reset play reset",
-        markers: true
     }
 });
 
@@ -572,7 +544,6 @@ gsap.to(".chapitre-6 #spaceship", {
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reset play reset",
-        markers: true
     }
 });
 
@@ -586,7 +557,6 @@ gsap.to(".chapitre-6 #spaceship", {
         start: "top 50%",
         end: "+=100%",
         toggleActions: "play reset play reset",
-        markers: true
     }
 });
 
@@ -606,34 +576,34 @@ gsap.to("#avion-6 img", {
     duration: 6,
     yoyo: true,
     scrollTrigger: {
-      trigger: ".chapitre-6",
-      start: "top 50%",
-      end: "+=100%",
-      toggleActions: "play reset play reset",
+        trigger: ".chapitre-6",
+        start: "top 50%",
+        end: "+=100%",
+        toggleActions: "play reset play reset",
     },
     motionPath: {
         path: [
-    { x: 0, y: 50 },
-    { x: 80, y: 100 },
-    { x: 120, y: 90 }, 
-    { x: 220, y: 80 }, 
-    { x: 420, y: 70 },
-    { x: 620, y: 60 },
-    { x: 820, y: 90 },
-    { x: 1020, y: 70 },
-    { x: 1220, y: 90 },
-    { x: 1420, y: 70 },
-    { x: 1620, y: 80 },
-    { x: 2000, y: 60 }, 
-    { x: 3000, y: 80 },
-          ],
+            { x: 0, y: 50 },
+            { x: 80, y: 100 },
+            { x: 120, y: 90 },
+            { x: 220, y: 80 },
+            { x: 420, y: 70 },
+            { x: 620, y: 60 },
+            { x: 820, y: 90 },
+            { x: 1020, y: 70 },
+            { x: 1220, y: 90 },
+            { x: 1420, y: 70 },
+            { x: 1620, y: 80 },
+            { x: 2000, y: 60 },
+            { x: 3000, y: 80 },
+        ],
         autoRotate: true,
         curviness: 0.5,
         start: 0.1,
         end: 1,
     },
-    
-  });
+
+});
 // -- chapitre 6 //
 
 
@@ -688,7 +658,6 @@ gsap.from(".texte-7", {
 
 // -- chapitre 7 //
 
-// Animation message //
 
 
 
