@@ -3,6 +3,7 @@
 @font-face {
   font-family: 'Komika';
   src: url("../assets/font/KOMIKAX_.ttf") format('truetype');
+  font-display: swap;
 }
 
 
@@ -57,7 +58,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  background-image: url("../assets/img/night-sky.png");
+  background-image: url("../assets/img/png-jpg/night-sky.png");
 }
 
 
@@ -100,7 +101,7 @@ header p {
 }
 
 .image-header {
-  background-image: url("../assets/img/airplane.png");
+  background-image: url("../assets/img/png-jpg/airplane.png");
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -190,7 +191,7 @@ ul.technique-gsap li {
 
 .chapitre-0 {
   position: relative;
-  background-image: url("../assets/img/pink-sky.png");
+  background-image: url("../assets/img/png-jpg/pink-sky.png");
   filter: none;
 }
 
@@ -297,7 +298,7 @@ ul.technique-gsap li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/img/montagne-pink.png");
+  background-image: url("../assets/img/png-jpg/montagne-pink.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -309,7 +310,7 @@ ul.technique-gsap li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/img/montagne-mauve.png");
+  background-image: url("../assets/img/png-jpg/montagne-mauve.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -321,7 +322,7 @@ ul.technique-gsap li {
   left: 0;
   width: 110%;
   height: 100%;
-  background-image: url("../assets/img/montagne-verte.png");
+  background-image: url("../assets/img/png-jpg/montagne-verte.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -331,7 +332,7 @@ ul.technique-gsap li {
 #sprite-sheet-bird {
   width: 30vw;
   z-index: 3;
-  background-image: url("../assets/img/spritesheet_bird.png");
+  background-image: url("../assets/img/spritesheets/spritesheet_bird.png");
   background-size: 300% 100%;
   animation: Sprite 1s steps(3) infinite;
   aspect-ratio: 811/422;
@@ -367,6 +368,9 @@ body.is-scrolling #sprite-sheet-bird {
   left: 90vw;
   top: 10vh;
   z-index: 5;
+  max-width: 100%;
+  height: 5vw;
+  height: auto;
 }
 
 
@@ -378,7 +382,7 @@ body.is-scrolling #sprite-sheet-bird {
 # Chapitre 2
 ----------------------------------------------------------*/
 .chapitre-2 {
-  background-image: url("../assets/img/desert.png");
+  background-image: url("../assets/img/png-jpg/desert.png");
   position: relative;
 }
 
@@ -388,6 +392,9 @@ body.is-scrolling #sprite-sheet-bird {
   left: -50vw;
   top: 10vh;
   transform: translateY(-50%);
+  max-width: 100%;
+  height: 5vw;
+  height: auto;
 }
 
 
@@ -396,6 +403,9 @@ body.is-scrolling #sprite-sheet-bird {
   position: absolute;
   left: -10vw;
   top: 10vh;
+  max-width: 100%;
+  height: 5vw;
+  height: auto;
 }
 
 /*---------------------------------------------------------- 
@@ -407,7 +417,7 @@ body.is-scrolling #sprite-sheet-bird {
 # Chapitre 3
 ----------------------------------------------------------*/
 .chapitre-3 {
-  background-image: url("../assets/img/ocean.png");
+  background-image: url("../assets/img/png-jpg/ocean.png");
   position: relative;
 }
 
@@ -417,7 +427,7 @@ body.is-scrolling #sprite-sheet-bird {
   left: -50vw;
   bottom: -70vh;
   transform: translateY(-50%);
-  background-image: url("../assets/img/spritesheet_whale.png");
+  background-image: url("../assets/img/spritesheets/spritesheet_whale.png");
   background-size: cover;
   animation: whale 1s steps(42) infinite;
   aspect-ratio: 1/1;
@@ -443,6 +453,9 @@ body.is-scrolling #sprite-sheet-whale {
   position: absolute;
   left: 90vw;
   top: 10vh;
+  max-width: 100%;
+  height: 5vw;
+  height: auto;
 }
 
 /*---------------------------------------------------------- 
@@ -454,7 +467,7 @@ body.is-scrolling #sprite-sheet-whale {
 # Chapitre 4
 ----------------------------------------------------------*/
 .chapitre-4 {
-  background-image: url("../assets/img/sky-night.png");
+  background-image: url("../assets/img/png-jpg/sky-night.png");
   position: relative;
 }
 
@@ -463,6 +476,9 @@ body.is-scrolling #sprite-sheet-whale {
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 100%;
+  height: 15vw;
+  height: auto;
 }
 
 #lune-2 {
@@ -470,6 +486,9 @@ body.is-scrolling #sprite-sheet-whale {
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 100%;
+  height: 15vw;
+  height: auto;
 }
 
 #avion-4 img {
@@ -477,6 +496,9 @@ body.is-scrolling #sprite-sheet-whale {
   position: absolute;
   left: -10vw;
   top: 10vh;
+  max-width: 100%;
+  height: 5vw;
+  height: auto;
 }
 
 
@@ -488,17 +510,21 @@ body.is-scrolling #sprite-sheet-whale {
 # Chapitre 5
 ----------------------------------------------------------*/
 .chapitre-5 {
-  background-image: url("../assets/img/space-backg.png");
+  background-image: url("../assets/img/png-jpg/space-backg.png");
   position: relative;
 }
 
 
 #planete-2 {
   width: 50vw;
+  max-width: 100%;
+  height: auto;
 }
 
 #planete-3 {
   width: 30vw;
+  max-width: 100%;
+  height: auto;
 }
 
 #avion-5 img {
@@ -506,6 +532,9 @@ body.is-scrolling #sprite-sheet-whale {
   position: absolute;
   left: 90vw;
   top: 10vh;
+  max-width: 100%;
+  height: 5vw;
+  height: auto;
 }
 
 
@@ -517,21 +546,34 @@ body.is-scrolling #sprite-sheet-whale {
 # Chapitre 6
 ----------------------------------------------------------*/
 .chapitre-6 {
-  background-image: url("../assets/img/space-back-2.png");
+  background-image: url("../assets/img/png-jpg/space-back-2.png");
   position: relative;
 }
 
 #planete-1 {
   width: 30vw;
-  z-index: 1;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
 }
 
+#spaceship {
+  max-width: 100%;
+  width: 40vw;
+  left: 0;
+  top: 10vw;
+  height: auto;
+  position: absolute;
+}
 
 #avion-6 img {
   width: 10vw;
   position: absolute;
   left: -10vw;
   top: 10vh;
+  max-width: 100%;
+  height: 5vw;
+  height: auto;
 }
 
 /*---------------------------------------------------------- 
@@ -543,7 +585,7 @@ body.is-scrolling #sprite-sheet-whale {
 # Chapitre 7
 ----------------------------------------------------------*/
 .chapitre-7 {
-  background-image: url("../assets/img/mail-box.jpg");
+  background-image: url("../assets/img/png-jpg/mail-box.jpg");
   position: relative;
 }
 
@@ -553,6 +595,8 @@ body.is-scrolling #sprite-sheet-whale {
   top: 0;
   right: 0;
   opacity: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 #paper-plane {
@@ -560,6 +604,8 @@ body.is-scrolling #sprite-sheet-whale {
   position: absolute;
   top: 20vw;
   right: -15vw;
+  max-width: 100%;
+  height: auto;
 }
 
 #messageOutput {
@@ -576,4 +622,4 @@ body.is-scrolling #sprite-sheet-whale {
 
 }
 
-/*---------------------------------------------------------- 
+/*---------------------------------------------------
