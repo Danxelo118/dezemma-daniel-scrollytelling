@@ -3,7 +3,7 @@
 [Page Speed Insights - Rapport du 12 mai 2024, 2:04:31 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/dkrbioj1ze?form_factor=desktop)
 ## Problème #1
 
-### Ressources qui bloquent l'affichage
+### Des ressources qui bloquent l'affichage
 Des URL dans le fichier HTML qui bloquent l'affichage des rendus de la page.
 
 ### Action concrète 
