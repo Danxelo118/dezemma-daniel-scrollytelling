@@ -10,7 +10,7 @@
 [Je dois enlever les ressources HTML qui bloquent l'affichage de la page en enlevant le lien du google font et stylesheet car ils sont inutiles vu que j'utilise Font Face dans le CSS pour utiliser une police.]
 
 ### Résultats
-
+Cela a marché, j'ai juste enlevé le code qui comportait les liens de Google Font.
 
 ## Problème #2
 
@@ -21,16 +21,18 @@
 [Je dois changer et ajouter des nouvelles dimensions à mes images, notamment mes images d'avion.]
 
 ### Résultats
+Cela a marché, j'ai utlisé height: auto et max-width: 100% pour résoudre le problème.
 
 ## Problème #3
 
-### Réduire du code javascript pas utilisé
+### Reporter images les images hors-écran
 [Insérez ici le nom du problème]
 
 ### Action concrète 
 [Insérez ici la ou les actions concrètes à prendre pour résoudre le problème, en nommant les fichiers ou ressources concernées]
 
 ### Résultats
+
 
 # Rapport d’optimisation du projet ScrollyTelling
 
