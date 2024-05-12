@@ -14,7 +14,7 @@ Cela a marché, j'ai juste enlevé le code qui comportait les liens de Google Fo
 
 ## Problème #2
 
-### Des images n'ont pas de dimensions définis
+### Les images n'ont pas de dimensions définis
 Mes images n'ont pas de height définies donc cela réduit les changements de disposition et le décalage cumulatif de la mise en page (CLS) des images.
 
 ### Action concrète 
@@ -32,7 +32,7 @@ Il y a des erreurs dans la console qui indiquaient l'apparition d'images HMTL ou
  Je dois compresser le dossier du projet en zip et j'ai extrait le dossier dans le site danielsebastien-momo.com et réouvert dans la navigateur.
 
 ### Résultats
-Cela a marché, mais j'ai du ouvrir une page pageSpeed Insights car l'ancien ne correspondait plus. Voici le lien: [Page Speed Insights - Rapport du 12 mai 2024, 3:17:28 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/dkrbioj1ze?form_factor=desktop)
+Cela a marché, il n'y a plus d'erreurs dans la console mais j'ai du ouvrir une page pageSpeed Insights car l'ancien ne correspondait plus. Voici le lien: [Page Speed Insights - Rapport du 12 mai 2024, 3:17:28 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/dkrbioj1ze?form_factor=desktop)
 
 # Rapport d’optimisation du projet ScrollyTelling
 
