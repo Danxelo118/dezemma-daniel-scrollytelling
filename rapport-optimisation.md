@@ -32,11 +32,11 @@ Il y a des erreurs dans la console qui indiquaient l'apparition d'images HMTL ou
  Je dois compresser le dossier du projet en zip et j'ai extrait le dossier dans le site danielsebastien-momo.com et réouvert dans la navigateur.
 
 ### Résultats
-Cela a marché, il n'y a plus d'erreurs dans la console mais j'ai du ouvrir une page pageSpeed Insights car l'ancien ne correspondait plus. Voici le lien: [Page Speed Insights - Rapport du 12 mai 2024, 3:17:28 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/0qnbae74jo?form_factor=desktop)
+Cela a marché, il n'y a plus d'erreurs dans la console mais j'ai du ouvrir une page pageSpeed Insights car l'ancien ne correspondait plus. Voici le lien: [Page Speed Insights - Rapport du 12 mai 2024, 3:17:28 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/05bb5eocx2?form_factor=desktop)
 
 # Rapport projet ScrollyTelling après optimisation
 
-[Page Speed Insights - Rapport du 12 mai 2024, 5:30:14 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/05bb5eocx2?form_factor=desktop)
+[Page Speed Insights - Rapport du 12 mai 2024, 5:30:14 PM](https://pagespeed.web.dev/analysis/https-daniel-sebastien-tim-momo-com/0qnbae74jo?form_factor=desktop)
 
 
 
